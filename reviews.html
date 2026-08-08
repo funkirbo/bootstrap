@@ -114,9 +114,11 @@
                                     results.data.sort((a,b) => b.Game.localeCompare(a.Game));
                                     break;
                                 case "N-O":
+                                    results.data.sort((a,b) => a.Game.localeCompare(b.Game));
                                     results.data.sort((a,b) => new Date(b["Date Reviewed"]).getTime() - new Date(a["Date Reviewed"]).getTime());
                                     break;
                                 case "O-N":
+                                    results.data.sort((a,b) => a.Game.localeCompare(b.Game));
                                     results.data.sort((a,b) => new Date(a["Date Reviewed"]).getTime() - new Date(b["Date Reviewed"]).getTime());
                                     break;
                                 case "H-L":
