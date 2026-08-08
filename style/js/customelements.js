@@ -271,14 +271,16 @@ function generateReviewPage(title, notes, description, date, image, score, devel
     }
 
     document.getElementById("body").innerHTML += (`
-        <div class = "container=fluid">
-            <div class = "mb-1 p-3 text-start text-white">
-                <h1 class = "p-1 m-1 pb-2 border-bottom border-2 border-dark-subtle" id = "title">${title} <span style = "font-size: 1rem;">${notes}</h1>
-                <p class = "p-1 m-1 mb-0 pb-0" id = "desc">${description}</p>
-                <p class = "p-1 m-1 pt-0 italic" id = "date">${date}</p>
-                <div class = "row m-1 p-1 mt-2">
-                    <div class = "col-md-12 text-center">
-                        <img src = "${image}" style = "width: 90%; height: auto; border: 3px solid #fabaf1;" id="image">
+        <div>
+            <div class = "row whitetext justify-content-evenly">
+                <div class = "mb-1 p-3 text-start text-white">
+                    <h1 class = "p-1 m-1 pb-2 border-bottom border-2 border-dark-subtle" id = "title">${title} <span style = "font-size: 1rem;">${notes}</h1>
+                    <p class = "p-1 m-1 mb-0 pb-0" id = "desc">${description}</p>
+                    <p class = "p-1 m-1 pt-0 italic" id = "date">${date}</p>
+                    <div class = "row m-1 p-1 mt-2">
+                        <div class = "col-md-12 text-center">
+                            <img src = "${image}" style = "width: 90%; height: auto; border: 3px solid #fabaf1;" id="image">
+                        </div>
                     </div>
                 </div>
             </div>
