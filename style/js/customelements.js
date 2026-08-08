@@ -126,7 +126,7 @@ function callNavOne(home, reviews, articles, collection, games)
 
 function callBody()
 {
-    document.getElementById("body").className = "container px-2 bg-objects";
+    document.getElementById("body").className = "container bg-objects";
 }
 
 function callFooter()
@@ -271,6 +271,7 @@ function generateReviewPage(title, notes, description, date, image, score, devel
     }
 
     document.getElementById("body").innerHTML += (`
+        <div class = "container">
         <div class = "mb-1 p-3 text-start text-white">
             <h1 class = "p-1 m-1 pb-2 border-bottom border-2 border-dark-subtle" id = "title">${title} <span style = "font-size: 1rem;">${notes}</h1>
             <p class = "p-1 m-1 mb-0 pb-0" id = "desc">${description}</p>
@@ -301,6 +302,7 @@ function generateReviewPage(title, notes, description, date, image, score, devel
                 <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">crossposted to <a class = "link-underline link-underline-opacity-0 pinktext bold" href = "${backloggd}" id = "backloggd">backloggd</a></p>
                 <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">crossposted to <a class = "link-underline link-underline-opacity-0 pinktext bold" href = "${ib}" id = "infinitebacklog">infinite backlog</a></p>
             </div>
+        </div>
         </div>
     `);
 }
