@@ -38,12 +38,12 @@
 
 @font-face {
     font-family: Lexend;
-    src: url("fonts/LexendDeca-Medium.ttf") format("ttf");
+    src: url("fonts/LexendDeca-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: Lexend;
-    src: url("fonts/LexendDeca-Bold.ttf") format("ttf");
+    src: url("fonts/LexendDeca-Bold.ttf") format("truetype");
     font-weight: bold;
 }
 
