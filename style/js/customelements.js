@@ -271,38 +271,38 @@ function generateReviewPage(title, notes, description, date, image, score, devel
     }
 
     document.getElementById("body").innerHTML += (`
-        <div class = "container">
-        <div class = "mb-1 p-3 text-start text-white">
-            <h1 class = "p-1 m-1 pb-2 border-bottom border-2 border-dark-subtle" id = "title">${title} <span style = "font-size: 1rem;">${notes}</h1>
-            <p class = "p-1 m-1 mb-0 pb-0" id = "desc">${description}</p>
-            <p class = "p-1 m-1 pt-0 italic" id = "date">${date}</p>
-            <div class = "row m-1 p-1 mt-2">
-                <div class = "col-md-12 text-center">
-                    <img src = "${image}" style = "width: 90%; height: auto; border: 3px solid #fabaf1;" id="image">
+        <div class = "container=fluid">
+            <div class = "mb-1 p-3 text-start text-white">
+                <h1 class = "p-1 m-1 pb-2 border-bottom border-2 border-dark-subtle" id = "title">${title} <span style = "font-size: 1rem;">${notes}</h1>
+                <p class = "p-1 m-1 mb-0 pb-0" id = "desc">${description}</p>
+                <p class = "p-1 m-1 pt-0 italic" id = "date">${date}</p>
+                <div class = "row m-1 p-1 mt-2">
+                    <div class = "col-md-12 text-center">
+                        <img src = "${image}" style = "width: 90%; height: auto; border: 3px solid #fabaf1;" id="image">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class = "row gx-2 p-1 m-2 mb-4 text-white justify-content-evenly">
-            <div class = "col-md-8 mb-4 p-3 text-start border border-2 border-dark-subtle bg-nav">
-                <h3 class = "p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">review</h3>
-                <div class = "p-1 m-1" id = "reviewcontent">
-                    ${content}
+            <div class = "row gx-2 p-1 m-2 mb-4 text-white justify-content-evenly">
+                <div class = "col-md-8 mb-4 p-3 text-start border border-2 border-dark-subtle bg-nav">
+                    <h3 class = "p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">review</h3>
+                    <div class = "p-1 m-1" id = "reviewcontent">
+                        ${content}
+                    </div>
+                </div>
+                <div class = "col-md-4 mb-1 p-3 pt-0 text-start">
+                    <div class = "ft-border p-2 pb-1 mt-0 m-2 text-center">
+                        <h1 id = "score">${score}</h1>
+                        <p id = "scoretext">${comment}</p>
+                    </div>
+                    <h3 class = "text-start p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">notes</h3>
+                    <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">developed by <span class = "bold" id = "developer">${developer}</span></p>
+                    <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">published by <span class = "bold" id = "publisher">${publisher}</span></p>
+                    <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">released in <span class = "bold" id = "year">${year}</span></p>
+                    <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">played on <span class = "bold" id = "console">${console}</span></p>
+                    <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">crossposted to <a class = "link-underline link-underline-opacity-0 pinktext bold" href = "${backloggd}" id = "backloggd">backloggd</a></p>
+                    <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">crossposted to <a class = "link-underline link-underline-opacity-0 pinktext bold" href = "${ib}" id = "infinitebacklog">infinite backlog</a></p>
                 </div>
             </div>
-            <div class = "col-md-4 mb-1 p-3 pt-0 text-start">
-                <div class = "ft-border p-2 pb-1 mt-0 m-2 text-center">
-                    <h1 id = "score">${score}</h1>
-                    <p id = "scoretext">${comment}</p>
-                </div>
-                <h3 class = "text-start p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">notes</h3>
-                <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">developed by <span class = "bold" id = "developer">${developer}</span></p>
-                <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">published by <span class = "bold" id = "publisher">${publisher}</span></p>
-                <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">released in <span class = "bold" id = "year">${year}</span></p>
-                <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">played on <span class = "bold" id = "console">${console}</span></p>
-                <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">crossposted to <a class = "link-underline link-underline-opacity-0 pinktext bold" href = "${backloggd}" id = "backloggd">backloggd</a></p>
-                <p class = "text-white border-start border-2 border-dark-subtle m-3 mb-2 p-2">crossposted to <a class = "link-underline link-underline-opacity-0 pinktext bold" href = "${ib}" id = "infinitebacklog">infinite backlog</a></p>
-            </div>
-        </div>
         </div>
     `);
 }
