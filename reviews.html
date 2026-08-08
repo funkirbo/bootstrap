@@ -105,6 +105,9 @@
                         complete: function(results) {
                             // console.log(results.data);
                             console.log(searchkey);
+                            let dateA = new Date(0);
+                            let dateB = new Date(0);
+                            const distantPast = new Date(0);
                             switch(sortby)
                             {
                                 case "A-Z":
@@ -115,22 +118,59 @@
                                     break;
                                 case "N-O":
                                     results.data.sort((a,b) => a.Game.localeCompare(b.Game));
-                                    results.data.sort((a,b) => new Date(b["Date Reviewed"]).getTime() - new Date(a["Date Reviewed"]).getTime());
+                                    results.data.sort((a,b) => {
+                                        if (a["Date Reviewed"] !== "")
+                                        {
+                                            dateA = new Date(a["Date Reviewed"]);
+                                        }
+                                        else {
+                                            dateA = distantPast;
+                                        }
+
+                                        if (b["Date Reviewed"] !== "")
+                                        {
+                                            dateB = new Date(b["Date Reviewed"]);
+                                        }
+                                        else {
+                                            dateB = distantPast;
+                                        }
+                                        return dateB.getTime() - dateA.getTime();
+                                    });
                                     break;
                                 case "O-N":
                                     results.data.sort((a,b) => a.Game.localeCompare(b.Game));
-                                    results.data.sort((a,b) => new Date(a["Date Reviewed"]).getTime() - new Date(b["Date Reviewed"]).getTime());
+                                    results.data.sort((a,b) => {
+                                        if (a["Date Reviewed"] !== "")
+                                        {
+                                            dateA = new Date(a["Date Reviewed"]);
+                                        }
+                                        else {
+                                            dateA = distantPast;
+                                        }
+
+                                        if (b["Date Reviewed"] !== "")
+                                        {
+                                            dateB = new Date(b["Date Reviewed"]);
+                                        }
+                                        else {
+                                            dateB = distantPast;
+                                        }
+                                        return dateA.getTime() - dateB.getTime();
+                                    });
                                     break;
                                 case "H-L":
+                                    results.data.sort((a,b) => a.Game.localeCompare(b.Game));
                                     results.data.sort((a,b) => b.Score - a.Score);
                                     break;
                                 case "L-H":
+                                    results.data.sort((a,b) => a.Game.localeCompare(b.Game));
                                     results.data.sort((a,b) => a.Score - b.Score);
                                     break;
                                 default:
                                     results.data.sort((a,b) => a.Game.localeCompare(b.Game));
                                     break;
                             }
+                            console.log(results.data);
                             results.data.forEach(game => {
                                 if (game.Review !== "-" && game.Review !== "" && game.Game.toUpperCase().includes(searchkey))
                                 {
