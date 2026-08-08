@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "a short hike";
+    let description = "a simple stroll up the mountain is sometimes all it takes.";
+    let date = "2024-01-14";
+
+    // no need to re-enter anywhere
+    let image = "images/a short hike.webp";
+    let score = 8;
+    let developer = "Adam Gryu";
+    let publisher = "Adam Gryu";
+    let year = 2019;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1275918/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/a-short-hike";
+
+    // gap for spacing
+    let content = `
+                <p>sometimes, life is hard. life will kick you in the dick and then claim that you hit them first. life will drop an anvil on your head and leave you there, alone.</p>
+                <p>a short hike is a comfy break from life. sit down, spend a little time talking with some people on the island, glide around, play some volleyball. talk to the various other residents of the island, listen to their menial problems, grab them whatever items they want. wander around aimlessly if you want. enjoy it. it&#39;s only a couple hours long, perfect for those who just need a break. </p>
+                <p>and, when you&#39;re ready to go back to the regular world, finish the climb. spend some extra time at the top, look around, enjoy the view from the peak. succeed in something, achieve something; then head back to life, feeling accomplished and refreshed, and move on a better person.</p>
+            `;
+</script>
+<head>
+	<title id = "title">a short hike</title>
+
+    <meta name='description' id="description" content='a simple stroll up the mountain is sometimes all it takes.'>
+    <meta name='date' id="date" content = "2024-01-14">
+
+    <!-- change me (for sure) -->
+    <meta name='keywords' content='review, 3dplatformer, platformer, openworld, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

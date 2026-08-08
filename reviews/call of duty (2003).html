@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "call of duty (2003)";
+    let description = "revolutionary for its time, pedestrian in the modern day.";
+    let date = "2024-07-28";
+
+    // no need to re-enter anywhere
+    let image = "images/call of duty.webp";
+    let score = 6;
+    let developer = "Infinity Ward";
+    let publisher = "Activision";
+    let year = 2003;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1825785/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/call-of-duty";
+
+    // gap for spacing
+    let content = `
+                <p>for a war shooter made in 2003, this ain&#39;t half bad. </p>
+                <p>it&#39;s not a terrible game by any means, especially in the sound department. the surprisingly good voice acting and really well-crafted cinematic soundtrack work really well together. there are fun set pieces scattered throughout, and certain moments stick out pretty nicely in my mind.</p>
+                <p>i just don&#39;t love the base gameplay. it feels slow and more methodical than a lot of the other FPS games i&#39;ve been playing recently, which isn&#39;t necessarily a bad thing, but this game doesn&#39;t do anything super interesting with the more slow-paced playstyle. not that it&#39;s absolutely awful or anything, just rather boring.</p>
+                <p>i played COD &#39;03 just to try out the call of duty gameplay style, since i don&#39;t play a ton of games in this lane, and all things considered, it wasn&#39;t terrible. it just doesn&#39;t do enough for me to want more of it</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">call of duty (2003)</title>
+    <meta name='description' id="description" content="revolutionary for its time, pedestrian in the modern day.">
+    <meta name='date' id="date" content = "2024-07-28">
+    <meta name='keywords' content='review, fps, shooter'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

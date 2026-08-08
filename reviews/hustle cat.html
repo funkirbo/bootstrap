@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "hustle cat";
+    let description = `cute, funny and sometimes emotional, but lacking enough substance to keep me engaged.`;
+    let date = "2024-12-12";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/hustle cat.webp";
+    let score = 6;
+    let developer = "Date Nighto";
+    let publisher = "Date Nighto";
+    let year = 2016;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2185458/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/hustle-cat";
+
+    // gap for spacing
+    let content = `
+                <p>just a totally decent, cute little visual novel. there&#39;s some totally solid emotional beats here, the characters are all nice, and i quite like the setup. i enjoy the magical elements in play here, and the system is interesting (if a little one-dimensional)</p>
+                <p>that&#39;s kind of a problem that flows throughout this game; none of these routes are long enough to feel substantial. they hit the same couple of plot beats, in the same order, with the only difference being some circumstance that adds a slight variation on the conflict. some of the routes hit harder than others, mason especially stands out among the &quot;standard&quot; routes, but none are specifically amazing or anything</p>
+                <p>i say &quot;standard routes&quot; because the secret graves route is far and away the best. it takes a much different perspective on the whole magic system, and delves deeper into how the whole cafe is set up. because you have to play every other route to unlock it, the intrigue of learning more about graves is prominent as well, making a good route even better</p>
+                <p>also, don&#39;t really know where to put this, but there&#39;s some pretty bad technical problems with the game (crashes, skipping text is inconsistent, the lack of a proper settings menu, etc) alongside some extremely noticeable consistency problems with both the CGs and the character sprites</p>
+                <p>outside of graves&#39; route, this game is nothing special, and while his route is quite solid, the rest of the game is just too one-dimensional to feel substantial or something i plan to go back to</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">hustle cat</title>
+    <meta name='description' id="description" content="cute, funny and sometimes emotional, but lacking enough substance to keep me engaged.">
+    <meta name='date' id="date" content = "2024-12-12">
+    <meta name='keywords' content='review, visualnovel, romance, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

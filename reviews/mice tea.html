@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "mice tea";
+    let description = `if you look past the obvious, there's a really gripping, emotionally mature set of stories here.`;
+    let date = "2025-07-12";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/mice tea.webp";
+    let score = 8;
+    let developer = "Cinnamon Switch";
+    let publisher = "Cinnamon Switch";
+    let year = 2023;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3076929/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/mice-tea";
+
+    // gap for spacing
+    let content = `
+                <p>look. if i&#39;m being fully honest, i only picked up this game because it intrigued me. the kinky stuff seemed interesting, but i was more focused on the really solid emotional core that the game seemed to advertise. and, to my honest surprise, the game heavily exceeded my expectations in that department!</p>
+                <p>mice tea is porn, sure. but it&#39;s also a very unique tale about clear communication, body positivity, sexual exploration, and gender identity. each character, whether during or after their transformation, grasping with the consequences of switching bodies. margaret&#39;s general lack of respect for her own image is one of her major character traits throughout the game, and near all of sylvia&#39;s path is focused on her accepting a more positive personality.</p>
+                <p>the standout path in this game, though, is felicia&#39;s. an extremely explicit story of felicia&#39;s transition from a man struggling with his masculinity to a woman happy in her new life. it&#39;s not very... subtle, or anything, but the character moments are good enough to make up for it.</p>
+                <p>that&#39;s something the game in general struggles with; subtlety. it&#39;s aggressive and extremely in-your-face about all of its themes, and that&#39;s fine! i&#39;d just rather a game that deals with such heavy topics to treat everything with a little more tact.</p>
+                <p>i haven&#39;t mentioned the porn, just because it really doesn&#39;t have a bearing on my opinions here. the art is really good, for sure, and the increased intimacy in each scene allows for really cute character interactions, but to me, the porn is nothing but filler. it provides a good gap to keep the pacing of the story from getting too fast. it&#39;s pretty kinky, so if you&#39;re into that, you&#39;ll get some good stuff here.</p>
+                <p>it&#39;s good. damn good, even. if you&#39;re okay bearing the more explicit material, there&#39;s some really awesome stories worth playing through.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">mice tea</title>
+    <meta name='description' id="description" content="if you look past the obvious, there's a really gripping, emotionally mature set of stories here.">
+    <meta name='date' id="date" content = "2025-07-12">
+    <meta name='keywords' content='review, sexual-content, visualnovel, romance, lgbtq+, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='adult'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

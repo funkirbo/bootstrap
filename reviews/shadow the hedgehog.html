@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "shadow the hedgehog";
+    let description = `one of the funniest bad video games i've ever played.`;
+    let date = "2024-05-11";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/shadow the hedgehog.webp";
+    let score = 3;
+    let developer = "Sonic Team";
+    let publisher = "Sega";
+    let year = 2005;
+    let console = "gamecube";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1608194/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/shadow-the-hedgehog";
+
+    // gap for spacing
+    let content = `
+                <p>this is like the anti-sonic forces to me.</p>
+                <p>the problem with sonic forces is that it&#39;s bland, boring and it has extremely little to do. shadow has plenty of levels, hundreds of paths and is ANYTHING but boring.</p>
+                <p>but it&#39;s laggy, unpolished as all hell, extremely edgy in the corniest ways possible, has guns for some reason, and the level design is... awful, to say the least. sonic forces, for how much i enjoy shitting on it, is an extremely polished game with so little edge it may as well be a circle.</p>
+                <p>shadow is better simply because i felt <em>something</em>, anything, while playing it. even if that was just laughing at the stupid cutscenes and stupider dialogue, it got something out of me. it also took some risks that, while i don&#39;t think they paid off, were at the very least interesting.</p>
+                <p>bad, but in a fun way.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">shadow the hedgehog</title>
+    <meta name='description' id="description" content="one of the funniest bad video games i've ever played.">
+    <meta name='date' id="date" content = "2024-05-11">
+    <meta name='keywords' content='review, 3dplatformer, platformer, tps, shooter'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

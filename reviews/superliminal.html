@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "superliminal";
+    let description = `hard to wrap your head around (until it is).`;
+    let date = "2024-08-15";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/superliminal.webp";
+    let score = 8;
+    let developer = "Pillow Castle Games";
+    let publisher = "Noodlecake Studios";
+    let year = 2019;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1870078/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/superliminal";
+
+    // gap for spacing
+    let content = `
+                <p>superliminal is confusing. it spends more time fucking with you... until it doesn&#39;t. it feels like descending deeper and deeper into an abandoned building, somewhere you shouldn&#39;t be, but at this point you&#39;re in too deep. turning back isn&#39;t an option, and as the hallways start repeating as you turn around, you just get more and more confused.</p>
+                <p>alarm clocks are blaring in your ears as time restarts, and restarts, and restarts, leaving you in an ever-descending world of decay. you watch as barriers that should be walls fall down, you find the backrooms of your world, rooms shrink into tiny setpieces to stare at. it&#39;s confusing, but compellingly so.</p>
+                <p>the complexity here isn&#39;t in its gameplay, it&#39;s in how the game functions on a large scale. you&#39;re not a victim of the environment any longer. shapes shift to your demand, as your perspective defines the world you&#39;re in.</p>
+                <p>it&#39;s great (until the ending, which i find a wee underwhelming).</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">superliminal</title>
+    <meta name='description' id="description" content="hard to wrap your head around (until it is).">
+    <meta name='date' id="date" content = "2024-08-15">
+    <meta name='keywords' content='review, puzzle, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

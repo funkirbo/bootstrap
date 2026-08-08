@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "cave story+";
+    let description = `an unfortunate case of "not for me".`;
+    let date = "2024-02-14";
+
+    // no need to re-enter anywhere
+    let image = "images/cave story+.webp";
+    let score = 5;
+    let developer = "Studio Pixel";
+    let publisher = "Nicalis";
+    let year = 2011;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1377996/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/cave-story-plus--1";
+
+    // gap for spacing
+    let content = `
+                <p>... man i wish i liked this more.</p>
+                <p>i&#39;m generally a fan of metroidvanias, and i don&#39;t mind difficult games, so this seemed like a great choice to pick up. plus, i got a recommendation from someone to play (to my knowledge they only use rateyourmusic, they&#39;re <em>@miokinon</em> on there), so my expectations were pretty high going into this one. unfortunately, there are some pretty major problems that stop me from enjoying this more.</p>
+                <p>the controls feel rather loose, and for a game involving a good amount of platforming, that&#39;s not a great quality to have. the lack of checkpoints for major sections was also not great; i&#39;m cool with endurance challenges, but those endurance challenges should be roughly equal in difficulty. i just found that many of the low-checkpoint sections were just frustrating, as it meant playing through another 5 minutes of easy gameplay that i just did.</p>
+                <p>it feels pretty dated in some ways as well - the checkpoint system fully resetting any progress, the lack of an in-game settings menu, the poor menu UI, it&#39;s all there.</p>
+                <p>i generally enjoyed the story, i think much of it is told in an interesting manner and characters were pretty endearing. there were points, especially in the latter half, where the plot was kind of just... dumped onto the player in an odd way. just a small gripe though, the story as a whole is pretty solid. i love balrog, he&#39;s just a homie</p>
+                <p>the bosses are pretty solid throughout, i enjoyed almost all of them thoroughly. the final fight is especially quite good and is a great climax.</p>
+                <p>it&#39;s not a game i consider great, but i&#39;d recommend it if it seems like your thing. i think it&#39;s just not exactly for me, and i can totally see why people adore it, so give it a shot if it seems fun to you. i just didn&#39;t love it personally.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">cave story+</title>
+    <meta name='description' id="description" content='an unfortunate case of "not for me".'>
+    <meta name='date' id="date" content = "2024-02-14">
+    <meta name='keywords' content='review, 2dplatformer, platformer, metroidvania, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "crash bandicoot";
+    let description = `an oldie, not necessarily a goodie.`;
+    let date = "2024-01-23";
+
+    // no need to re-enter anywhere
+    let notes = "n.sane trilogy"
+    let image = "images/crash bandicoot.webp";
+    let score = 3;
+    let developer = "Vicarious Visions";
+    let publisher = "Activision";
+    let year = 2017;
+    let console = "switch";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1317110/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/crash-bandicoot--2";
+
+    // gap for spacing
+    let content = `
+                <p>games in the 90s had very different principles compared to the games of today. a lot of ideals from the arcade and NES era were still prominent; most notably, punishing, high-difficulty games remained commonplace.</p>
+                <p>i have no problems with difficulty. hell, celeste is one of my favorite games ever and that game kicked my ass more times than i could count. what i <em>do</em> have problems with is unfair difficulty. crash isn&#39;t painfully bad because it&#39;s hard, it&#39;s painfully bad because it&#39;s hard for all the wrong reasons.</p>
+                <p>much of crash 1&#39;s difficulty comes with precise platforming. through the whole game, from beginning to end, almost all the jumps are pretty tight. normally, this wouldn&#39;t be a big deal. the problem lies with the camera angle; during 3D segments, the camera is both placed behind crash in a very awkward angle, and it&#39;s unadjustable. for precise platforming, this is a nightmare. the depth perception is consistently off, making many of my deaths feel less like my lack of skill and more like poor game design. combined with an already difficult base game, this makes many levels hell to complete.</p>
+                <p>it doesn&#39;t help that the game also takes a lot of time to laugh at you when you fail. after every level, you have to painfully watch as crash gets hit by all the boxes you missed. during the game over, a tiki head laughs after they say their line. enemies will stand in place after killing you, which, intentional or not, feels like a real punch in the stomach. this doubling up of deaths feeling unfair &amp; the frequent feeling of being made fun of sets up for a truly awful game experience. </p>
+                <p>the checkpoint system is also atrocious. there are maybe 3 or 4 per level, and failing right before a checkpoint means wading through 2-3 minutes of obstacles you just passed. this waiting is exemplified by the majority of crash 1&#39;s obstacles running on cycles, which means you&#39;re already doing a lot of waiting your first time through.</p>
+                <p>speaking of obstacles, crash 1&#39;s level design is awful. if i have to play another bridge level, i might end it all. enemy placement is generally poor, some levels drag while others feel inconsequential. every boss is just a waiting game for 4 or 5 minutes while you wait to take advantage of their <em>incredibly</em> obvious or stupidly cryptic openings. there is no in between.</p>
+                <p>all this, and i didn&#39;t even mention the poor hitbox work, the awfully loose controls, the one-tile pits place exactly where you&#39;d expect to jump...</p>
+                <p>this game is awful. sure, it looks great, sounds fine, there&#39;s a good amount of personality here; but at the end of the day, it miserably fails at what it tries to be - a challenging yet fun 3D platformer.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">crash bandicoot</title>
+    <meta name='description' id="description" content='an oldie, not necessarily a goodie.'>
+    <meta name='date' id="date" content = "2024-01-23">
+    <meta name='keywords' content='review, 3dplatformer, platformer'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

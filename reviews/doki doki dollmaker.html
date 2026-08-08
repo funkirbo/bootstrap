@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "doki doki dollmaker";
+    let description = `pure yaoi fluff. nothing more, nothing less.`;
+    let date = "2025-01-19";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/doki doki dollmaker.png";
+    let score = 6;
+    let developer = "Karitsa";
+    let publisher = "Karitsa";
+    let year = 2023;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2333905/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/doki-doki-dollmaker";
+
+    // gap for spacing
+    let content = `
+                <p>doki doki dollmaker is a complete fluff-fest of yaoi goodness. and that&#39;s all fine and dandy, because i LOVE yaoi fluff, but unfortunately, this one just doesn&#39;t hit the mark for me :/</p>
+                <p>i like all of the characters designs, at least! there&#39;s a pretty consistent style here, and the game as a whole looks fantastic. the backgrounds are quite nice, and there&#39;s some pretty well-done CGs in here as well. it&#39;s nice!</p>
+                <p>the characters are generally fun as well; desifer, kahvel and torin were probably my favorites, they had unique attitudes and by far the most fun dialogue options. rook was a little too childish, and the option to romance him made me feel a little... uncomfortable, to say the least. and ellery was just flat boring lmao</p>
+                <p>it&#39;s just that this game <em>tries</em> to delve into a semi-serious plot, and that plot just creates more questions than answers. how do these dolls know english, yet have no knowledge of anything else? how do they have personalities?</p>
+                <p>it feels like the writers thought half-way through that they just <em>had</em> to explain what was going on, when in all honesty, they totally didn&#39;t. if this game never tried to explain what was happening, i&#39;d never have asked.</p>
+                <p>i&#39;d definitely still call this game good, especially because most of the game nails the vibe, but it&#39;s not a smash out of the park or anything like that</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">doki doki dollmaker</title>
+    <meta name='description' id="description" content='pure yaoi fluff. nothing more, nothing less.'>
+    <meta name='date' id="date" content = "2025-01-19">
+    <meta name='keywords' content='review, visualnovel, romance, bl, lgbtq+, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

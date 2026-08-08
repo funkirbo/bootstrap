@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>home</title>
+
+    <meta name='description' content="the home of 'funkirbo talks things'.">
+    <meta name='date' content = "2026-07-31">
+
+    <meta name='keywords' content='index'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <meta name='rating' content='General'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href = "style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "style/js/bootstrap.bundle.min.js"></script>
+    <link href = "style/global.css" rel = "stylesheet">
+
+    <script src = "style/js/customelements.js"></script>
+
+    <script>
+        let featuredTitle = "r4: ridge racer type 4";
+        let featuredDesc = `"art is art, time is always going to pass, and judging stuff in the context of its release is both important... and not the whole picture. things age, sometimes for the better and sometimes for the worse."`;
+        let featuredImage = "reviews/images/r4 - ridge racer type 4.webp";
+        let featuredLink = "/reviews/r4 - ridge racer type 4.html";
+
+        let rp1title = "420BLAZEIT 2: GAME OF THE YEAR";
+        let rp1date = "2026-07-15";
+        let rp1link = "reviews/420blaze it 2 - game of the year.html"
+        
+        let rp2title = "call of duty 4: modern warfare";
+        let rp2date = "2026-07-09";
+        let rp2link = "reviews/call of duty 4 - modern warfare.html"
+
+        let rp3title = "valkyrie saga";
+        let rp3date = "2026-07-03";
+        let rp3link = "reviews/valkyrie saga.html";
+    </script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    document.getElementById("navbar").innerHTML = callNav(true, false, false, false, false);
+</script>
+
+<body id = "body">
+    <div class = "row whitetext justify-content-evenly">
+        <div class = "col-md-11 mb-1 p-3 text-start ft-border">
+            <h1 class = "text-start p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">featured post</h1>
+            <div class = "row justify-content-evenly m-3 mb-0">
+                <div class = "col-md-6 p-2">
+                    <a id = "featuredLink" href = "#" class = "link-underline link-underline-opacity-0 text-white">
+                        <h2 id = "featuredTitle">featured post</h2>
+                        <h5 class = "border-start border-2 border-dark-subtle p-3 m-1 mt-2" id = "featuredDesc">post description</h4>
+                    </a>
+                </div>
+                <div class = "col-md-5 p-2 d-flex align-items-center">
+                    <!-- <div class = "placeholder" style = "width: 100%; height: auto;"></div> -->
+                    <img src = "" class = "ft-border mx-auto d-flex" id = "featuredImage" style = "width: 100%; height: auto; max-width: 25rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "row gx-2 p-1 m-2 mb-4 text-white justify-content-evenly">
+        <div class = "col-md-3 mb-1 p-3 text-center">
+            <h3 class = "text-start p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">recent posts</h3>
+            <ul class = "list-group list-group-flush m-2">
+                <li class = "list-group-item bg-objects text-start">
+                    <a href = "#" class = "link-underline link-underline-opacity-0" id = "rp1link">
+                        <h5 class = "pinktext" id = "rp1title">burger</h5>
+                        <span class = "whitetext" id = "rp1date">12/21/21</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects text-start">
+                    <a href = "#" class = "link-underline link-underline-opacity-0"  id = "rp2link">
+                        <h5 class = "pinktext" id = "rp2title">pizza</h5>
+                        <span class = "whitetext" id = "rp2date">12/21/20</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects text-start">
+                    <a href = "#" class = "link-underline link-underline-opacity-0" id = "rp3link">
+                        <h5 class = "pinktext" id = "rp3title">macaroni</h5>
+                        <span class = "whitetext" id = "rp3date">12/21/19</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class = "col-md-7 mb-1 p-3 text-center bg-nav border-2 border border-dark-subtle">
+            <h3 class = "text-start p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">home</h3>
+            <p class = "text-start ps-2 pt-2">hey hello hi! i am <span class = "bold">funkirbo!</span> i like to write about the things i do!</p>
+            <p class = "text-start ps-2">and when i say “things i do”, i really mean what i play; video games fill the vast majority of my free time.</p>
+            <p class = "text-start ps-2">this is by no means a comprehensive list of everything i’ve ever finished; writing takes time, and i only have so much of that. my goal is to slowly chip away at writing reviews for everything, but that’s sort of like sisyphus pushing the boulder, right? it’s a goal i know i’m never going to finish, because every game i finish pushes the posts back even further.</p>
+            <h3 class = "text-start p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">about me</h3>
+            <p class = "text-start ps-2 pt-2">i am currently a sophomore computer science major at a university i will not disclose. outside of university, i really don’t do all that much, to be honest. i play a lot of video games, listen to music, and hang out with my friends. at the end of the day, i’m a pretty boring guy.</p>
+            <p class = "text-start ps-2 pt-2">genre-wise, i’m a big fan of mystery stuff. <span class = "italic">ace attorney</span> is my favorite game franchise, and the two <span class = "italic">knives out</span> movies i’ve seen have been excellent as well. i’ll enjoy pretty much anything you put in front of me, though, as long as it’s quality; i’m not all that picky. …that sounds kind of corny, but it’s true!</p>
+            <h3 class = "text-start p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">content</h3>
+            <p class = "text-start ps-2 pt-2">the reviews on this site are called “reviews” only because there’s really not a better way to describe them. i don’t focus on reaching a certain word length or anything, i just kind of talk until i’ve put down the thoughts i want to. that means that a good chunk of the reviews are pretty short, and even the longest ones aren’t much longer than a standard game review. that lack of length is a combination of my lack of writing skill, and the lack of interesting and unique thoughts i have about whatever i’m writing about. i'm not going to waste either of our time rehashing the thoughts of people smarter than i.</p>
+            <p class = "text-start ps-2 pt-2">all of the reviews are also cross-posted to <a href = "https://backloggd.com/u/funkirbo/" class = "pinktext link-underline link-underline-opacity-0">backloggd</a> as well as <a href = "https://infinitebacklog.net/users/funkirbo" class = "pinktext link-underline link-underline-opacity-0">infinite backlog</a>. i try to stay active on both. if you’d like to see my full collection, which is basically a centralized log of everything i own, alongside anything i’ve finished, that is located on my <a href = "https://docs.google.com/spreadsheets/d/1wghI3DxunnkLMZCxzpBWu02AC6G18SnVpQZ8Z8v5ilQ/edit?usp=sharing" class = "pinktext link-underline link-underline-opacity-0">spreadsheet</a>!</p>
+            <p class = "text-start ps-2 pt-2">if you notice any issues on the site (typos/formatting errors), on the spreadsheet, or in my reviews, please let me know! my socials are just to the side (or above if you're on a smaller device), and my discord is <span class = "bold">@funkirbo</span>!</p>
+        </div>
+        <div class = "col-md-2 mb-1 p-3 text-center">
+            <h3 class = "text-start p-1 m-1 pb-2 border-bottom border-dark-subtle border-2">socials</h3>
+            <h5 class = "text-start p-1 m-2 pb-2 border-bottom border-dark-subtle border-1">general</h5>
+            <ul class = "list-group list-group-flush">
+                <li class = "list-group-item bg-objects">
+                    <img style="height:24px;width:24px;" src="style\logos\icons8-discord-48.png">
+                    <span class = "text-white">funkirbo</span><br>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://twitter.com/funkirbo/" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\icons8-twitter-bird-48.png">
+                        <span class = "text-white">funkirbo</span><br>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://youtube.com/@funkirbo" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\icons8-youtube-48.png">
+                        <span class = "text-white">funkirbo</span><br>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://bsky.app/profile/funkirbo.net" class = "link-underline link-underline-opacity-0">
+                        <img style="height:20px;width:20px;" src="style\logos\icons8-bluesky-48.png">
+                        <span class = "text-white">funkirbo.net</span><br>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://www.tumblr.com/funkirbo?source=share" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\tumblr.png">
+                        <span class = "text-white">funkirbo</span><br>
+                    </a>
+                </li>
+                <h5 class = "text-start p-1 m-2 pb-2 border-bottom border-dark-subtle border-1">hobby</h5>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://backloggd.com/u/funkirbo/" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\backloggd.png">
+                        <span class = "text-white">funkirbo</span><br>
+                        <span style = "font-size: .75rem" class = "text-white">gaming</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://infinitebacklog.net/users/funkirbo" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\infinite backlog.png">
+                        <span class = "text-white">funkirbo</span><br>
+                        <span style = "font-size: .75rem" class = "text-white">gaming</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://www.albumoftheyear.org/user/funkirbo/" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\aoty.png">
+                        <span class = "text-white">funkirbo</span><br>
+                        <span style = "font-size: .75rem" class = "text-white">music</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://rateyourmusic.com/~funkirb0" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\rym.png">
+                        <span class = "text-white">funkirb0</span><br>
+                        <span style = "font-size: .75rem" class = "text-white">music</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://anilist.co/user/funkirbo/" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\anilist.png">
+                        <span class = "text-white">funkirbo</span><br>
+                        <span style = "font-size: .75rem" class = "text-white">animanga</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://letterboxd.com/funkirbo/" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\letterboxd-mac-icon.png">
+                        <span class = "text-white">funkirbo</span><br>
+                        <span style = "font-size: .75rem" class = "text-white">movies</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://www.serializd.com/user/funkirbo/profile" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\serializd.png">
+                        <span class = "text-white">funkirbo</span><br>
+                        <span style = "font-size: .75rem" class = "text-white">tv</span>
+                    </a>
+                </li>
+                <li class = "list-group-item bg-objects">
+                    <a href = "https://www.goodreads.com/user/show/198471419-funkirbo" class = "link-underline link-underline-opacity-0">
+                        <img style="height:24px;width:24px;" src="style\logos\goodreads.png">
+                        <span class = "text-white">funkirbo</span><br>
+                        <span style = "font-size: .75rem" class = "text-white">books</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        callBody();
+
+        featuredPost(featuredLink, featuredTitle, featuredDesc, featuredImage);
+        recentPostOne(rp1link, rp1title, rp1date);
+        recentPostTwo(rp2link, rp2title, rp2date);
+        recentPostThree(rp3link, rp3title, rp3date);
+    </script>
+
+</body>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "disc room";
+    let description = `a little too simple, but still some good fun.`;
+    let date = "2026-01-13";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/disc room.webp";
+    let score = 6;
+    let developer = "Kitty Calis";
+    let publisher = "Devolver";
+    let year = 2020;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3981888/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/disc-room--1";
+
+    // gap for spacing
+    let content = `
+                <p>simplicity is such a hard thing to nail when it comes to smaller titles like <em>disc room</em>. too simple, and you don&#39;t even hook the players for long enough to finish your already short game. too complex, and you don&#39;t have enough time to fully explore the concepts in the game without completely overwhelming players at the start.</p>
+                <p>to me, <em>disc room</em> leans a little too far on the simple side. the premise, an &quot;avoid-em-up&quot;, is ridiculously easy to understand, and there&#39;s not enough extra stuff introduced to make playing for more than about an hour super compelling. you get some simple powerups (time-slowing, dashes, stuff like that) to make the game&#39;s more difficult stages a little easier, but at the end of the day, the most you&#39;re doing is moving the stick, <em>maybe</em> pressing a button every 4 or 5 seconds.</p>
+                <p>i don&#39;t necessarily think that&#39;s a terrible thing. i had a good time in the couple of hours i played the game, and the simplicity makes it easy to pick back up for a couple of runs every now and again. it&#39;s an easy timewaster, especially on switch, and a game i&#39;m a little surprised never got ported to mobile. it&#39;d be perfect on there.</p>
+                <p>my biggest problem is that there&#39;s really not much outside of the simple mechanics. the story is intriguing, but ultimately amounts to nothing. the art style is fresh, but not enough is done with the styling. there&#39;s no reason to play <em>disc room</em> for anything <em>except</em> the mechanics, and when the game is so simple mechanically, it really limits what can be done.</p>
+                <p>if there was more story, or a dingier atmosphere, or <em>something</em> else to pull me in even a little bit more, i&#39;m sure the (already short) runtime wouldn&#39;t have felt too long. but by the end of my 2-and-a-half hour playthrough, i was extremely bored of what i was playing. all this game needs is a tiny spark of something more to make it stand out. on its own, though, it&#39;s good. nothing more, nothing less.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">disc room</title>
+    <meta name='description' id="description" content='a little too simple, but still some good fun.'>
+    <meta name='date' id="date" content = "2026-01-13">
+    <meta name='keywords' content='review, arcade, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

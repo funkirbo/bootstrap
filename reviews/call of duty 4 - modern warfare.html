@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "call of duty 4: modern warfare";
+    let description = "a glimpse into a long-gone era.";
+    let date = "2026-07-09";
+
+    // no need to re-enter anywhere
+    let image = "images/call of duty 4 - modern warfare.webp";
+    let score = 8;
+    let developer = "Infinity Ward";
+    let publisher = "Activision";
+    let year = 2007;
+    let console = "ps3";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/4923250/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/call-of-duty-4-modern-warfare";
+
+    // gap for spacing
+    let content = `
+                <p>when i was in middle school, i went over to one of my friend&#39;s houses to play on their PS4. at the time, i only had a Wii U, so it was super interesting to get to experience some games that i never would&#39;ve been able to play on my sad black brick. we sat down on his (thankfully carpeted) floor and he asked me one question: &quot;do you want to play a racing game, or <em>call of duty</em>?&quot;</p>
+                <p>now, this story would&#39;ve been way more interesting if i had decided to play <em>black ops 3</em> with him, but we ended up playing <em>trials: fusion</em> instead, which i remember really liking. that part doesn&#39;t really matter, though; it was the assumption said friend made. he knew i didn&#39;t have a PlayStation, yet he assumed that i knew what <em>call of duty</em> was. it was the biggest thing for a kid at that time, the privilege to play <em>cod</em> with your friends was something not every child had. PCs weren&#39;t really a thing for a kid like me to have, <em>roblox</em> and <em>minecraft</em> were seen as &quot;too kiddy&quot; for the average 11 year old, and the Wii U was dead in the water. <em>call of duty</em> was IT.</p>
+                <p>i didn&#39;t end up meaningfully playing a <em>call of duty</em> game on my own until years after the series had passed its prime, and i never got to an entry that people would consider essential until just last month with <em>modern warfare</em>. man, was i missing out.</p>
+                <p><em>modern warfare</em>&#39;s singleplayer is entirely built around creating these massive, exciting set-pieces, which sounds like a bad thing, but i PROMISE it&#39;s not. because each mission is designed to build up to these single moments, the tension is really what helps keep this game engaging. knowing that everything is about to go to shit but not knowing exactly when the rope will snap fosters this wonderful sense of dread throughout any and every gunfight you enter. i rarely remember a specific set of enemies or a unique building i fought in, but crawling out of a helicopter crash, barely standing, before the blinding light of a nuclear explosion fills the screen in <em>aftermath</em>, or crawling in between tanks while soldiers stomp just over my head in <em>all ghillied up</em> make up for those quieter moments tenfold.</p>
+                <p>while i don&#39;t think the standard gunplay is anything special, there&#39;s enough variety in what you&#39;ll be doing to make up for it. there are missions where you&#39;ll be more stealthy, and some where you have to fly in, guns blazing. machine guns and rocket launchers can completely change the feel of a battle, and snipers let you play further back without consequence. the majority of the combat is your standard late-2000s cover shooter, but the guns themselves are very well-tuned, and every fighting area is diverse and dense.</p>
+                <p>it is still <em>call of duty</em>, which means the narrative is still a vaguely post-9/11 romp of destroying middle eastern terrorist organizations and their russian allies, just with a &quot;modern&quot; coat of paint. you can tell this game came out in 2007, because its pro-iraq war sentiment conflicts with its themes of how devastating a current-day world war would be. one character gets blown up by a nuke due to a shoddy takeover of a middle eastern city, and then you pivot to another continuing their plans as if nothing impactful happened. while i think the individual character interactions are really endearing on the micro-level, the overarching narrative feels pretty out-of-date by today&#39;s standards compared to the WWII stories that preceded it.</p>
+                <p>it&#39;s almost surreal, though, looking back at this late-2000s era of shooters, where <em>modern warfare</em> was seen as a major step forward for the FPS genre, because of how it became such a cultural phenomenon for the next decade to come. i was on the late on the <em>cod</em> train; by the time i was over at that friend&#39;s house, <em>pubg</em> and <em>fortnite</em> were already taking over the world. i witnessed <em>call of duty</em> evolve from the go-to multiplayer shooter for casual players, to just another option in the sea of competitive online games. the university i attend has clubs for seven different FPS or TPS games; ten years ago, there might&#39;ve been one or two.</p>
+                <p>i have immense respect for <em>modern warfare</em> as a video game. despite its faults, despite what <em>call of duty</em> would turn into just a few short years later, it was good enough on its own to completely change what the &quot;default&quot; FPS game was. the set-pieces are grand and bombastic, there&#39;s a variety of mission structures that are all well-executed enough not to feel out of place or unpolished, the game looks and sounds great, even by today&#39;s standards. it feels like a game that was made with love for the genre, and that passion seeps through into every aspect of the finished product.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">call of duty 4: modern warfare</title>
+    <meta name='description' id="description" content="a glimpse into a long-gone era.">
+    <meta name='date' id="date" content = "2026-07-09">
+    <meta name='keywords' content='review, fps, shooter'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

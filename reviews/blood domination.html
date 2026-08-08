@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "blood domination";
+    let description = "it's vampire yaoi, how bad can it be? ...oh god.";
+    let date = "2024-12-07";
+
+    // no need to re-enter anywhere
+    let image = "images/blood domination.jpg";
+    let score = 2;
+    let developer = "Otomedou";
+    let publisher = "Abracadabra";
+    let year = 2018;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2166491/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/blood-domination";
+
+    // gap for spacing
+    let content = `
+                <p><strong><em>tw // child abuse, sexual assault, arson, extremely weird teacher/student dynamics</em></strong></p>
+                <p>i&#39;m really not too sure what i should&#39;ve expected going into this one. obviously, it&#39;s a adult BL visual novel whose entire gimmick is dom/sub dynamics, so it was gonna be a bit wild by default, but... god damn does this game handle some important topics <em>very</em> poorly</p>
+                <p>there&#39;s some serious problems with consent in most every route, most notably in <em>kazuha x yuugiri</em> and <em>takamine x chihaya</em>. i know that this kind of topic kind of comes with the territory, but for a game that&#39;s aiming for these relationships to seem genuine, it just doesn&#39;t work. these relationships can&#39;t feel realistic because of how suspect some of these scenarios feel. someone will get assaulted and an hour later, they&#39;ll say that it doesn&#39;t matter.</p>
+                <p>the biggest offender here, by far, is <em>kazuha x yuugiri</em>. the entire route is this &quot;player&quot; (kazuha) trying to woo someone who he thinks is his soulmate, despite the fact that he is consistently shut down. turns out, the victim of his chases (yuugiri) was fucking trafficked as a kid?? and then after trying for so long, kazuha just gives up and sexually assaults the guy and then yuugiri just forgives him and they get together? what?</p>
+                <p>this ain&#39;t even mentioning the arson, more sexual assault, SCHOOL-AUTHORIZED teacher/student relationship, more sexual assault, like...</p>
+                <p>it feels like this game was trying to go for a darker theme with its topics, but fails to make anything seem genuine because of how short each route is, alongside the fact that these relationships are meant to be mutual and permanent. i just don&#39;t like how this whole game handles the topics it puts on the table.</p>
+                <p>you can write genuinely interesting plots with themes like sexual assault and childhood trauma, but it feels as though this game is aiming to fetishize more than anything else. any shreds of well-written plot are thrown together with some of the most uncaring, unapologetic, poorly written shit i&#39;ve seen in any form of media.</p>
+                <p>am i diving too deep into the writing of a dom/sub porn game? maybe. but if you&#39;re gonna make a game like this, at least do it right and do it tastefully.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">blood domination</title>
+    <meta name='description' id="description" content="it's vampire yaoi, how bad can it be? ...oh god.">
+    <meta name='date' id="date" content = "2024-12-07">
+    <meta name='keywords' content='review, adult, visualnovel, romance, lgbtq+, bl, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='adult'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

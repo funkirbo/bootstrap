@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "doom";
+    let description = `a vital stepping stone, but we've stepped past it for a reason.`;
+    let date = "2024-05-18";
+
+    // no need to re-enter anywhere
+    let notes = "modern remaster"
+    let image = "images/doom.webp";
+    let score = 5;
+    let developer = "id Software";
+    let publisher = "id Software";
+    let year = 2019;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1626218/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/doom--4";
+
+    // gap for spacing
+    let content = `
+                <p>look. is doom influential? yes. is doom a requirement for us to get where FPS games have gotten? absolutely. but this is one of the most poorly aged games i think i&#39;ve ever seen.</p>
+                <p>first, the glaringly obvious: the lack of vertical camera movement is... uncanny, to say the least. it makes a lot of the vertical combat in this game feel extremely off, and removes a lot of the possibilities for this game to have fun level design.</p>
+                <p>secondly: the aforementioned level design just hasn&#39;t held up. most of the levels are mazy and confusing, but not in a fun way. there are moments, for sure, and there are levels that are very fun scattered throughout, but a good chunk of the time, i don&#39;t feel gratified when i beat these levels - i feel annoyed. the bosses are also PITIFULLY easy; not even close to as hard as the levels. i played most of the game on the middle difficulty, for those of you wondering.</p>
+                <p>not to say doom &#39;93 is an awful game, not at all. the music is excellent, the enemy designs are unique, and there&#39;s a good amount of content here for a game released when computers had less power than a damn calculator. but, realistically, it&#39;s not a game that holds up in 2024.</p>
+                <p>i think you should at least <em>play</em> doom &#39;93, as it&#39;s worthwhile as a piece of gaming history (and it&#39;s pretty short). as FPS games go, though, there are definitely better options out there today.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">doom</title>
+    <meta name='description' id="description" content="a vital stepping stone, but we've stepped past it for a reason.">
+    <meta name='date' id="date" content = "2024-05-18">
+    <meta name='keywords' content='review, fps, shooter'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

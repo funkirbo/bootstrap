@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "ace attorney investigations: miles edgeworth";
+    let description = "a great core, with a collection of issues that just can't be ignored.";
+    let date = "2024-03-29";
+
+    // no need to re-enter anywhere
+    let image = "images/ace attorney investigations - miles edgeworth.webp";
+    let score = 6;
+    let developer = "Capcom";
+    let publisher = "Capcom";
+    let year = 2009;
+    let console = "ds";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1493219/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/ace-attorney-investigations-miles-edgeworth";
+
+    // gap for spacing
+    let content = `
+                <p>i feel like AAI as a whole struggles from the problem that many of the less fun traditional ace attorney cases struggle from.</p>
+                <p>many of the case-specific characters aren&#39;t all that good, sometimes case logic can get thrown out the window, investigations can get tedious at points, the usual. none of these problems are deal-breakers on their own; i can put up with shaky logic or slow investigations or mediocre characters. unfortunately, all 3 for most of the game makes it just kind of... boring.</p>
+                <p>all the cases being connected by one large overarching enemy, that being the smuggling ring, is an interesting twist on the AA formula. unfortunately, i can&#39;t bring myself to care about this smuggling ring when i have <em>0 fucking clue</em> what they&#39;re smuggling until the final case. the problem isn&#39;t the premise; it&#39;s the execution.</p>
+                <p>the logic and deduction mechanics are pretty interesting, but i think the way they&#39;re used is... just kind of odd. it never feels like you&#39;re ever connecting the dots when it matters; the deductions you make never feel all that challenging. </p>
+                <p>once again, none of these problems ruin the game on their own; it&#39;s a <em>death by 1000 paper cuts</em>-type deal. the ace attorney games of the past deal with a couple of these problems, at most, while AAI has all of them, all at once.</p>
+                <p>now, this is still an ace attorney game. many of the positives of the series are still here; witty writing, excellent main characters (especially kay, she&#39;s great), great visuals &amp; music.</p>
+                <p>i can&#39;t call this game bad. i can and <em>will</em> call it the most flawed of the traditional ace attorney games i&#39;ve played so far (i say traditional because the layton crossover is an abomination). i would still absolutely play it if you enjoy the series, because it is still more ace attorney. it&#39;s not by any means bad; just more obviously flawed than the rest.</p>
+            `;
+</script>
+<head>
+	<title id = "title">ace attorney investigations - miles edgeworth</title>
+
+    <meta name='description' id="description" content="a great core, with a collection of issues that just can't be ignored.">
+    <meta name='date' id="date" content = "2024-03-29">
+
+    <!-- change me (for sure) -->
+    <meta name='keywords' content='review, visualnovel, mystery'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

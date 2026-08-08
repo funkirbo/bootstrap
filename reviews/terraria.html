@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "terraria";
+    let description = `a great time with a friend, far too overwhelming on your own.`;
+    let date = "2024-02-16";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/terraria.webp";
+    let score = 8;
+    let developer = "Re-Logic";
+    let publisher = "505 Games";
+    let year = 2011;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1383776/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/terraria";
+
+    // gap for spacing
+    let content = `
+                <p>if i&#39;m fully and totally honest, this playthrough was maybe the most fun full playthrough of a game i&#39;ve ever had. so you may be thinking: why on earth is this not a 10?</p>
+                <p>well that&#39;s because i played this game with a friend in co-op (thank you Crynn). they are as close to an expert as i know, and has way more experience in this game that i do. this game was so fun because they helped me out in every way.</p>
+                <p>playing this game blind would be hell on earth. there&#39;s so many intricacies, weapon upgrades and random shit that no new player would ever know about because <em>why the hell would you</em>. that&#39;s the biggest problem with the game; the barrier for entry is extremely high.</p>
+                <p>i do have some slight problems with grinding, but that&#39;s to be expected for a game like this. other than that, though, terraria is a blast if you know what you&#39;re doing. the weapons are consistently fun to use and there&#39;s a ton of variety in between weapon and armor classes. the bosses are an absolute joy, especially moon lord.</p>
+                <p>the game is great... if you can get past the barrier of entry. and unfortunately, that barrier of entry is taller than the empire state building.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">terraria</title>
+    <meta name='description' id="description" content="a great time with a friend, far too overwhelming on your own.">
+    <meta name='date' id="date" content = "2024-02-16">
+    <meta name='keywords' content='review, survival, openworld, sandbox, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

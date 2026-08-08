@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "zero escape: zero time dilemma";
+    let description = `if the second game expanded on the wrong elements of the first, the third game expands on the worst elements of both.`;
+    let date = "2025-02-04";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/zero escape - zero time dilemma.webp";
+    let score = 2;
+    let developer = "Spike Chunsoft";
+    let publisher = "Spike Chunsoft";
+    let year = 2016;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2398377/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/zero-escape-zero-time-dilemma";
+
+    // gap for spacing
+    let content = `
+                <p>so imagine you have a beautiful meal. 5 course, gorgeous meal, with all of your favorite foods, made by the highest caliber of chefs, exactly how you like, in the best possible way. that meal is <em>999.</em></p>
+                <p>now, you imagine that meal; same 5 courses, with 4 of them being made by those same professional chefs, with the same level of quality. the final one, though, that last bite to eat, is made by your booger-eating little brother who draws on the walls and almost burns his mac and cheese. that is <em>virtue&#39;s last reward.</em></p>
+                <p>finally - last one here - imagine that same 5 course meal. except your little brother didn&#39;t make the last dish, he made the first 4. and the final dish, still made by those professional chefs, was dropped on the floor before it got to you. THAT, my friends, is <em>zero time dilemma.</em></p>
+                <p>it is a complete mess. it&#39;s terrible off the bat, and terrible the entire way through. you reach some of the endings, and you see the potential that could&#39;ve been there, but you&#39;ve just eaten 4 plates of straight shit, and even the good dish is pretty messed up at this point.</p>
+                <p>starting with the &quot;decision game&quot; itself: what made 999 and VLR&#39;s versions of the nonary game interesting was that both were inherently meant to be survivable. there was a sense of hope, and through proper coordination and cooperation, all 9 people could have survived both. that hope is ruined by paranoia and distrust, and those qualities make the character interactions in both of those games interesting. ZTD, instead of creating a game where paranoia will ruin a good chance of survival, creates a game where its inherent premise means that 6 people have to die. it turns the interactions from trusting with a twinge of paranoia to paranoid with a twinge of trust. it ends up making the characters overthink everything, and it just doesn&#39;t work.</p>
+                <p>speaking of those characters, ZTD brings back the 4 main characters from 999 and VLR respectively. they are butchered. junpei flips his attitude on akane with the direction of the wind, akane herself is... fine, actually - a little pretentious, and selfish, but those qualities kind of make akane, akane. sigma turns off his brain for half the game, and phi is barely there in most of the important endings.</p>
+                <p>the new characters are just as bad. mira and q are pretty interesting for their roles in the plot, diana just makes consistently poor decisions when under pressure (which makes sense, but is handled in a terrible way), carlos is alright, and eric...</p>
+                <p>eric might be the single worst written character in any VN i have ever played. he is a whiny, annoying, paranoid, problem-creating little bitch whose best part in the game is when you watch him collapse after a crossbow shot to the heart. he single-handedly causes a good 50% of the problems in this game, and i am NOT exaggerating.</p>
+                <p>every beat in this story is nonsensical. there&#39;s a point where an old guy literally just shows up and becomes the most important character in the story. sigma and diana fuck for some reason. and, when it was all over, i gained nothing. i want to ignore everything this game presented and pretend VLR was it. carlos, no matter how hot he is, can not save whatever mess you can call Zero Time Dilemma.</p>
+                <p>one thing that helped make 999 and VLR so impactful: the voice acting! it&#39;s still pretty decent, but then you look at the cutscenes... and any impact is removed. they look bad - worse than VLR, which was a very low bar - and ruin many of the scenes that could&#39;ve been emotionally impactful. it&#39;s also all cutscenes, so when the dialogue inevitably drags on 8x longer than it needs to, YOU CAN&#39;T SKIP ANYTHING! AWESOME! :D</p>
+                <p>this game sucks. if you liked VLR, DO NOT PLAY THIS. at least for me, someone who was rather lukewarm on VLR, especially on its ending, this ruined any future interest i have in this series.</p>
+                <p>this meal sucked. i&#39;d rather have eaten that near-burnt macaroni.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">zero escape: zero time dilemma</title>
+    <meta name='description' id="description" content="if the second game expanded on the wrong elements of the first, the third game expands on the worst elements of both.">
+    <meta name='date' id="date" content = "2025-02-04">
+    <meta name='keywords' content='review, visualnovel, horror, psychhorror'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

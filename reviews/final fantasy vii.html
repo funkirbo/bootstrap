@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "final fantasy vii";
+    let description = `a classic JRPG, in every sense of the word.`;
+    let date = "2024-07-10";
+
+    // no need to re-enter anywhere
+    let notes = "modern remaster"
+    let image = "images/final fantasy vii.webp";
+    let score = 8;
+    let developer = "Square";
+    let publisher = "Square Enix";
+    let year = 2015;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1775191/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/final-fantasy-vii--6";
+
+    // gap for spacing
+    let content = `
+                <p>i&#39;m not a huge JRPG fan; i just find it hard to sit down and play one all the way through. i&#39;ve played a fair few and enjoyed them, but often times, i feel the combat isn&#39;t all that fun, and the stories tend to drag. when i strive to finish one, i have a good time, but picking one up is an arduous task.</p>
+                <p>final fantasy VII is a damn good example of how this genre can shine, though. there was a fair share of grinding which i didn&#39;t love (especially towards the end of the game), and the battles ended up dragging at times, but the story&#39;s about as good as it gets. a winding story through finding who you really are, and saving the planet too. each character interacts with each other in really genuine ways, and their group evolves from a ragtag group of childhood friends to a massive family of misfits.</p>
+                <p>i think it&#39;s an excellent <em>story</em>. but some of the gameplay, alongside this port being pretty awful without mods, kinda drags it down a bit.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">final fantasy vii</title>
+    <meta name='description' id="description" content="a classic JRPG, in every sense of the word.">
+    <meta name='date' id="date" content = "2024-07-10">
+    <meta name='keywords' content='review, jrpg, rpg, turnbased'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

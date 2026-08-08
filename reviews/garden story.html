@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "garden story";
+    let description = `a cute little story about reconnecting your community.`;
+    let date = "2025-01-02";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/garden story.webp";
+    let score = 7;
+    let developer = "Picogram";
+    let publisher = "Rose City Games";
+    let year = 2021;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2261424/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/garden-story";
+
+    // gap for spacing
+    let content = `
+                <p>garden story is just cute. it&#39;s not mechanically deep, it&#39;s not a story that&#39;ll blow you away, but it&#39;s a silly little time in itself.</p>
+                <p>following concord around the vast grove, just talking with the silly little fellas and doing their quests, is fun! i didn&#39;t actually mind some of the busy work, most of the time it was fun, and it encouraged me to explore and find new quests to do. i do wish there was some more variety in those quests, especially because you&#39;ll be doing them <em>a lot</em>, but it&#39;s no biggie</p>
+                <p>the story is also really well presented! it feels less like a &quot;world-ending&quot; scenario, and closer to a community broken apart. your goal, for most of the game, isn&#39;t to &quot;save the grove&quot; - it&#39;s to rebuild communities lost. it&#39;s to help with small things, with building bridges and re-opening trade routes. even at the end, as the larger threat comes into play, the main themes of recreating bonds are still present! it&#39;s cute, and well-told.</p>
+                <p>i dunno, garden story won&#39;t blow you away. it&#39;s not a game that&#39;s mind-blowing or revolutionary, but it&#39;s a fun, cute little experience that i think is worth it!</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">garden story</title>
+    <meta name='description' id="description" content="a cute little story about reconnecting your community.">
+    <meta name='date' id="date" content = "2025-01-02">
+    <meta name='keywords' content='review, adventure, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

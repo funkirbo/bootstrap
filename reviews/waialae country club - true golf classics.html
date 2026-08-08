@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "waialae country club: true golf classics";
+    let description = `90s golf... on a budget.`;
+    let date = "2025-01-03";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/waialae country club - true golf classics.webp";
+    let score = 5;
+    let developer = "T&E Soft";
+    let publisher = "Nintendo";
+    let year = 1998;
+    let console = "n64";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2266081/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/waialae-country-club-true-golf-classics";
+
+    // gap for spacing
+    let content = `
+                <p>i don&#39;t know how to critically analyze this kind of game.</p>
+                <p>like, in the grand scheme of golf games... this sure is one of &#39;em. you golf. it&#39;s got all the options you&#39;d expect; none of them feel awesome or impactful, but they&#39;re, in fact, there. it&#39;s a little too easy to top out, sure, but it&#39;s not anything wild.</p>
+                <p>it&#39;s just that this game is so, SO dumb in the weirdest ways. there is no music while golfing (i aided my ears by listening to Secret Formula by Kash Krabs on repeat), but then the sound effects for the introduction are so over-the-top. the intro SCREAMS &quot;we paid our translation team 4 pennies and rolled with it.&quot; the settings options are atrocious and make no sense. nothing here lines up!!</p>
+                <p>so, is waialae country club bad? ...yeah, probably. but at least it made me laugh a lot. like, a Lot.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">waialae country club: true golf classics</title>
+    <meta name='description' id="description" content="90s golf... on a budget.">
+    <meta name='date' id="date" content = "2025-01-03">
+    <meta name='keywords' content='review, sports'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

@@ -1,0 +1,81 @@
+/* Background colors */
+
+.bg-nav {
+    background-color: #111111;
+}
+
+.bg-objects {
+    background-color: #161618;
+}
+
+.bg-outer {
+    background-color: #202022;
+}
+
+/* Text colors */
+
+.pinktext {
+    color: #aa7ba4;
+}
+
+.pinktext:hover {
+    color: #fabaf1;
+}
+
+.blacktext {
+    color: black;
+}
+
+.blacktext:hover {
+    color: #101010;
+}
+
+.whitetext {
+    color: white;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Lexend;
+    src: url("fonts/LexendDeca-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url("fonts/LexendDeca-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+div {
+    font-family: Lexend, Arial, Helvetica, sans-serif;
+}
+
+/* Lists */
+
+.list-group-item {
+    --bs-border-opacity: 0%;
+}
+
+/* Borders */
+
+.ft-border {
+    border: 2px #fabaf1 solid;
+}
+
+.rv-border {
+    border-left: 2px solid #fabaf1;
+}
+
+/* Select Objects */
+::selection {
+    background-color: #aa7ba4;
+}

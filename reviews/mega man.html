@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "mega man";
+    let description = `there's a reason people talk about its sequel more.`;
+    let date = "2025-05-07";
+
+    // no need to re-enter anywhere
+    let notes = "legacy collection"
+    let image = "images/mega man.webp";
+    let score = 3;
+    let developer = "Capcom";
+    let publisher = "Capcom";
+    let year = 1987;
+    let console = "switch";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2767347/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/mega-man";
+
+    // gap for spacing
+    let content = `
+                <p>the first mega man falls into a similar category as sonic 1 for me: a game with the vibes and &quot;feel&quot; down, with some absolutely atrocious level design.</p>
+                <p>except mega man&#39;s level design is consistently unfun, instead of sonic 1, which at least has green hill and star light zones. enemy placement is awful, the general platforming doesn&#39;t fit mega man&#39;s physics model, and the obstacles are far too tight, but not in a fun way. the bosses are great, at least!</p>
+                <p>it&#39;s clear that this was a first go at things, a test run of sorts, for mega man to build off of. they got the most important thing - the bosses - down pat early, and while the level design definitely needed some tweaking, there&#39;s something really good underneath the surface here.</p>
+                <p>there&#39;s some positives here, but it just feels a little undercooked. admittedly, i used the legacy collection savestates pretty often, just so i wouldn&#39;t lose all my progress so easily. the levels were challenging, but more in the annoying way, not in the fun way, yknow?</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">mega man</title>
+    <meta name='description' id="description" content="there's a reason people talk about its sequel more.">
+    <meta name='date' id="date" content = "2025-05-07">
+    <meta name='keywords' content='review, 2dplatformer, platformer'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

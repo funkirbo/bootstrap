@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "frog detective 1: the haunted island";
+    let description = `the perfect game for an afternoon in.`;
+    let date = "2025-06-14";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/frog detective 1 - the haunted island.webp";
+    let score = 7;
+    let developer = "worm club";
+    let publisher = "SUPERHOT PRESENTS";
+    let year = 2018;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2951271/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/frog-detective-1-the-haunted-island";
+
+    // gap for spacing
+    let content = `
+                <p>the first frog detective game is fun. it’s not complex, it’s not mechanically crazy, it’s a simple little visual novel that’s got no bells and whistles. very dry humor throughout, with some really silly character designs and a great low-poly style. you basically just run around and talk to all the characters, doing their little quests to unlock the secrets of the haunted island.</p>
+                <p>i appreciate how little the game cares, if you get what i mean. it’s not complicated, it’s a simple story that both kids and adults can enjoy. the humor may be dry, but kids don’t really care. and the style may be very childish, but the game never talks down to the player in any way. it’s perfect for everyone. if you can’t get behind that, i think you’re just kind of a stick in the mud.</p>
+                <p>i get that this game isn’t perfect, but it’s the perfect 7/10 game to me. the quintessential “sit down for an hour and have a good time” game, and i love that.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">frog detective 1: the haunted island</title>
+    <meta name='description' id="description" content="the perfect game for an afternoon in.">
+    <meta name='date' id="date" content = "2025-06-14">
+    <meta name='keywords' content='review, visualnovel, mystery, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

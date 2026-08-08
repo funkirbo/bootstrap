@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "completely stretchy";
+    let description = `derivative as can be, but it derives the wrong things.`;
+    let date = "2026-03-08";
+
+    // no need to re-enter anywhere
+    let image = "images/completely stretchy.webp";
+    let score = 4;
+    let developer = "Warp Digital";
+    let publisher = "Super Rare Original";
+    let year = 2024;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/4280732/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/completely-stretchy";
+
+    // gap for spacing
+    let content = `
+                <p>&quot;hey fred, gimme a <em>sludge life</em> with extra movement!&quot;<br>
+                &quot;extra movement.&quot;<br>
+                &quot;and hold the items!&quot;<br>
+                &quot;hold the items?&quot;<br>
+                &quot;and hold the atmosphere!&quot;<br>
+                &quot;hold the atmosphere? hey jimmy, gimme a <em>sludge life</em> with NOTHING!&quot;</p>
+                <p>yeah, the intro says it all. <em>completely stretchy</em> took one look at <em>sludge life</em> and said &quot;oh, i can do that!&quot; and subsequently failed to do that. it&#39;s an open-world platformer with a focus on odd-looking environments and crude humor. this one adds a grappling hook that slowly gets more powerful, in exchange for the various objects you&#39;d get in <em>sludge life</em>. instead of tagging various items throughout the world, you instead have to do missions to get these little electric balls that fuel the power plant. okay, whatever.</p>
+                <p>but like... let&#39;s be honest. if you&#39;re shaping your game around <em>sludge life</em> (and don&#39;t even try to convince me otherwise, because look at the character designs and read a single line of dialogue) and don&#39;t commit to an interesting aesthetic, you&#39;re shooting yourself in the foot. the appeal of a game like this entirely lies in its vibes, in its atmosphere. not a soul on earth played <em>sludge life</em> and said &quot;this game needs a more complex movement system&quot;, because not a soul on earth CARED about movement in that game. and for those who did, the progression system was better, because getting the items simply made getting certain tags easier, instead of being (essentially) a progression lock.</p>
+                <p>there&#39;s nothing here aesthetically. the music is totally fine, it looks totally fine, the UI is totally fine. it doesn&#39;t lean into anything; it uses stupid humor as a disguise to mask the fact that it&#39;s extremely basic both visually and musically. are there some pretty funny lines? sure, absolutely. but the hit rate is lower, and the jokes don&#39;t land as well without the environment to back them up.</p>
+                <p>and, ironically, the game is somehow WORSE mechanically! grappling around is about as awkward as can be, as whenever you latch onto something, you&#39;re basically tied into a single direction. you can only move forwards and backwards from the exact angle you latched onto, instead of being able to move into another direction with the camera. that, combined with an extremely odd ledge-grabbing system, makes navigating the game&#39;s more platforming-focused segments an absolute nightmare.</p>
+                <p>you might say that it&#39;s not fair for me to compare a game to something else, that i should judge <em>completely stretchy</em> fully on its own merits. but, at the end of the day, doing that wouldn&#39;t change my thoughts on the end product. it would still be a sometimes funny, occasionally interesting platformer that fails to have a distinct identity outside of its crude humor. it would still feel really awkward to control, and i still wouldn&#39;t really like its progression system. the only reason i&#39;m comparing it so closely to <em>sludge life</em> is because the inspiration it takes from <em>sludge life</em> is so obvious.</p>
+                <p>basically, <em>completely stretchy</em> misses the point on what made its predecessor interesting in the first place, by removing any and every compelling element and replacing them with half-baked ideas. not the best end product.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">completely stretchy</title>
+    <meta name='description' id="description" content='derivative as can be, but it derives the wrong things.'>
+    <meta name='date' id="date" content = "2026-03-08">
+    <meta name='keywords' content='review, openworld, 3dplatformer, platformer, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

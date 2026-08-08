@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "pilotwings resort";
+    let description = `it works, and it's fun, but it could've been so much more.`;
+    let date = "2026-04-12";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/pilotwings resort.webp";
+    let score = 6;
+    let developer = "Nintendo";
+    let publisher = "Nintendo";
+    let year = 2011;
+    let console = "3ds";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/4455824/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/pilotwings-resort";
+
+    // gap for spacing
+    let content = `
+                <p>ironically, i don&#39;t actually own <em>wii sports resort</em>. it&#39;s a game i&#39;ve been meaning to pick up for the longest time, but i&#39;d need a wii motion plus controller alongside it, and it just felt like too much effort and money for a game i don&#39;t have all that much interest in. i am aware of the game&#39;s most revered minigame, though, being the mystical <strong>Island Flyover</strong>.</p>
+                <p>fun fact: that minigame was intended to be a reboot of <em>pilotwings</em>, and... i think it probably would&#39;ve been better than what we got with <em>pilotwings resort</em>. from what i&#39;ve seen, the mystical <strong>Island Flyover</strong> spans over the entirety of wuhu island, and focuses much more on exploration than the quality of your flying. it&#39;s more about the joy of getting to explore a dense world with a paraglider, instead of being about the actual act of flying.</p>
+                <p>unfortunately, <em>pilotwings resort</em> is the opposite. it takes the wrong lesson from what made the mystical <strong>Island Flyover</strong> so good, and spends its entire playtime focusing on small challenge-based levels that are meant to challenge your control over the various vehicles at your disposal. it&#39;s still fun, but the magic runs out much quicker than it should. the most fun missions, as expected, are the longest ones. getting to drop down from the clouds and fly over the full island is exactly what made the mystical <strong>Island Flyover</strong> so fun. it&#39;s a beautiful sight.</p>
+                <p>i just wish this game was on the wii, because it likely would&#39;ve been more focused on the exploration. nintendo&#39;s always taken a slightly different approach when creating campaigns for their handhelds versus the home console stuff. games on their handhelds tend to be more mission-based, because it&#39;s easier to pick up and play two or three short missions on-the-go than it is to play one long one. if the game were on a home console, they may have decided to explore a couple different islands, or tried... something else, to vary up the gameplay a little.</p>
+                <p>what we got, though, was just kind of... good. it&#39;s fun in short bursts, but it&#39;s far too simple and stands out in my mind very little.</p>
+                <p>mystical <strong>Island Flyover</strong></p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">pilotwings resort</title>
+    <meta name='description' id="description" content="it works, and it's fun, but it could've been so much more.">
+    <meta name='date' id="date" content = "2026-04-12">
+    <meta name='keywords' content='review, sports, simulator'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

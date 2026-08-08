@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "kirby star allies";
+    let description = `kirby's most average platformer of the modern era.`;
+    let date = "2024-02-21";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/kirby star allies.webp";
+    let score = 6;
+    let developer = "HAL Laboratory";
+    let publisher = "Nintendo";
+    let year = 2018;
+    let console = "switch";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1398307/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/kirby-star-allies";
+
+    // gap for spacing
+    let content = `
+                <p>how on earth do you go from the masterwork that is planet robobot to this? star allies is even simpler than the usual kirby formula, which is <em>saying something</em>. i&#39;m not expecting complex ideas from kirby, but i am expecting memorable level designs and a great gimmick. star allies has neither.</p>
+                <p>let&#39;s take a look at the couple kirby games prior to star allies. return to dreamland had the super abilities, triple deluxe had hypernova, and planet robobot had the mech suit. the largest difference between these 3 abilities and the ally gimmick in star allies is <em>player control</em>. all 3 prior games gave kirby himself some extra ability, while star allies simply makes kirby&#39;s job easier. the previous abilities are also designed for very specific sections of the game, which allows for the level design to adapt to kirby&#39;s extra powerful abilities at the time. star allies, on the other hand, must assume the player doesn&#39;t have friends at all times, which forces the level design to be extremely basic and one-note.</p>
+                <p>the story also lacks the impact of many of kirby&#39;s previous adventures. while kirby&#39;s never been a particularly story-focused series, triple deluxe and planet robobot had pretty solid characters and a decent emotional core. star allies more or less ditches this, and the story fails because of it.</p>
+                <p>everything else is pretty solid; it&#39;s still a kirby game. visually, the game is stunning. beautiful colors and models, which is to be expected for kirby. the game&#39;s also got great music - once again, a standard for kirby. it&#39;s not a bad game, per se, it&#39;s just a much less interesting game than the games released prior and since. it&#39;s an odd dip for a series whose quality is generally very high.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">kirby star allies</title>
+    <meta name='description' id="description" content="kirby's most average platformer of the modern era.">
+    <meta name='date' id="date" content = "2024-02-21">
+    <meta name='keywords' content='review, 2dplatformer, platformer'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

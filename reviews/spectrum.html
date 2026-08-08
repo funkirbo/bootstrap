@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "spectrum";
+    let description = `stuck between being a traditional platformer and a puzzle game.`;
+    let date = "2025-08-08";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/spectrum.webp";
+    let score = 3;
+    let developer = "Liam Mullins";
+    let publisher = "Liam Mullins";
+    let year = 2021;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3200837/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/spectrum--1";
+
+    // gap for spacing
+    let content = `
+                <p>spectrum is weird to me.</p>
+                <p>the premise isn&#39;t crazy. you gain colors, and when you activate those colors, platforms and other obstacles pop up. it&#39;s not complicated, and as a core concept for a puzzle platformer, it does a great job.</p>
+                <p>...well, at least in theory. because - get this - spectrum isn&#39;t a puzzle platformer. its levels are designed around being played at a faster pace, there&#39;s a timer for each individual level, and the obstacles at play are extremely quick. the game wants to play like a traditional platformer, with the mechanics of a puzzle platformer, and that ideology is why the game falters.</p>
+                <p>i think the controls are the easiest example of how the genre mixing fails. each individual color is its own button on the keyboard, meaning you&#39;re handling 5 extra buttons on top of your general movement. there&#39;s also crystals you can dash with, which involve a sixth button. you see the problem, right? you&#39;re balancing 6 extra buttons, all of which need to be hit with relatively precise timing, at all points throughout the game. it&#39;s not as if you&#39;re intended to pause and think about each individual action, like in a puzzle platformer; you&#39;re intended to fully manage all 5 colors at all times. by 3 colors, it&#39;s a mess. by 4, it&#39;s damn annoying to manage. by 5, it&#39;s a nightmare.</p>
+                <p>if spectrum was intended to be a puzzle platformer, this control scheme would work wonders! you wouldn&#39;t spend time switching through each color every time you wanted to make a new decision, and you could focus on using one or two colors at a time. it just doesn&#39;t make sense when the game&#39;s intended to run at a fast pace.</p>
+                <p>the level design also runs assuming that balancing all the colors at your disposal is as easy as pie, when because of the control scheme, it never really will be. there&#39;s moments when you&#39;re consistently switching through 4 different colors while managing movement and dashing and avoiding the heat-seeking missiles chasing your trail; it&#39;s just overwhelming.</p>
+                <p>it feels like the game started as a puzzle platformer, and at some point shifted into a traditional one, and at no point in between were the controls or mechanics rethought to fit to work in the new format. i see the vision, but the result just isn&#39;t fun.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">spectrum</title>
+    <meta name='description' id="description" content="stuck between being a traditional platformer and a puzzle game.">
+    <meta name='date' id="date" content = "2025-08-08">
+    <meta name='keywords' content='review, 2dplatformer, puzzleplatformer, platformer, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

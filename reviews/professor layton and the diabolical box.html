@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "professor layton and the diabolical box";
+    let description = `the game's story is too boring, for how much focus is put on it.`;
+    let date = "2024-04-07";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/professor layton and the diabolical box.jpg";
+    let score = 6;
+    let developer = "LEVEL-5";
+    let publisher = "Nintendo";
+    let year = 2007;
+    let console = "ds";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1518598/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/professor-layton-and-the-diabolical-box";
+
+    // gap for spacing
+    let content = `
+                <p>professor layton, as a series, just doesn&#39;t appeal to me. there&#39;s a couple reasons why, none of which involve the actual puzzles.</p>
+                <p>the puzzles are generally pretty fun; some are pretty cryptic, sure, but that&#39;s kinda just how logic puzzles are sometimes. the puzzles are most definitely the highlight of the series, and in diabolical box, they&#39;re quite good. better than curious village, at least.</p>
+                <p>my problems don&#39;t extend to the art or music either. the cutscenes are beautifully animated, characters are expressive, and the orchestral soundtrack adds a mature feeling to much of the game that feels just right.</p>
+                <p>even the general investigations are pretty solid; walking around town, clicking on evidence and seeing layton/luke&#39;s thoughts on the environment, it&#39;s endearing. i don&#39;t particularly love how the game sometimes becomes a series of fetch quests, but the puzzles along the way break that up nicely, so it&#39;s no big deal.</p>
+                <p>nearly all my problems arise with the story, especially the characters. starting with the plot, diabolical box is not a complex game. the huge mcguffin, this elysian box, remains wholly uninteresting throughout the game. much of the intrigue comes from the towns of dropstone and folsense themselves, both of which hold a sense of intrigue that remains until <em>the twist</em>.</p>
+                <p>speaking of <em>the twist</em>, it sucks. i won&#39;t go into too much detail for the sake of spoilers, but i will say that the foreshadowing was not fleshed out at all. were there hints? sure. does <em>the twist</em> explain how things went down? kind of. does <em>the twist</em> make logical sense? not one bit.</p>
+                <p>now, now, onto my largest problem with diabolical box (and the professor layton series as a whole): Professor Hershel Layton himself. layton, as a character, is nigh perfect. a perfect gentleman, always knows what to say, deducts mysteries and puzzles without problem (often before the player). oh yeah, he can also hold his own in a swordfight, and is trusted enough by the police to intervene with a murder investigation. sure.</p>
+                <p>creating a main character whose flaws just <em>don&#39;t exist</em> is not a strategy that i think works. professor hershel layton isn&#39;t a good character, and that&#39;s a problem when you spend the entire damn game in his perspective. it&#39;s no fun. layton isn&#39;t changed as a character after the game, he&#39;s the exact same perfect gentleman the moment you start and the moment you roll credits. i find it infuriating.</p>
+                <p>i just don&#39;t really get the appeal of a visual novel with no character development. sure, other characters develop, but they&#39;re characters you couldn&#39;t give a shit about; the ending is a heartwarming scene between 2 characters with 2 hours of screen time combined.</p>
+                <p>i think it&#39;s just a personal problem, or i&#39;m missing something major, but i just don&#39;t particularly understand the praise this game gets. i could just be a bumbling idiot.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">professor layton and the diabolical box</title>
+    <meta name='description' id="description" content="the game's story is too boring, for how much focus is put on it.">
+    <meta name='date' id="date" content = "2024-04-07">
+    <meta name='keywords' content='review, visualnovel, puzzle, mystery'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

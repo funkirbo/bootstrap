@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "phoenix wright: ace attorney - spirit of justice";
+    let description = `same problem with development as its predecessor, just with different characters.`;
+    let date = "2024-06-09";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/phoenix wright ace attorney - spirit of justice.webp";
+    let score = 6;
+    let developer = "Capcom";
+    let publisher = "Capcom";
+    let year = 2016;
+    let console = "3ds";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1692231/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/phoenix-wright-ace-attorney-spirit-of-justice";
+
+    // gap for spacing
+    let content = `
+                <p>go to my dual destinies review. ctrl+c -&gt; ctrl+v. then replace every mention of &quot;athena&quot; with &quot;apollo&quot; and you&#39;ve got the gist of my feelings on this game</p>
+                <p>IT'S THE SAME FUCKING PROBLEM. I DO NOT CARE ABOUT PHOENIX WRIGHT ANYMORE. HIS STORY HAS RUN ITS COURSE, AND THATS IT. THIS GAME WAS SUPPOSED TO GIVE APOLLO THE BACKSTORY HE&#39;S NEEDED FOR 3 GAMES NOW, AND HE IS THE LEAD DEFENSE ATTORNEY FOR LESS THAN HALF THE GAME. 99% OF APOLLO&#39;S BACKSTORY COMES WITH ONE SINGULAR CASE AT THE END OF THE GAME. AT LEAST ATHENA GOT 3 CASES.</p>
+                <p>look. it&#39;s still an ace attorney game, the characters are great, the case plots are okay (mostly due to the same struggles with subtlety that AA5 had). nahyuta is a solid prosecutor with a good emotional element thrown in, and he&#39;s a very different vibe than the rest of the prosecutors, which is nice.</p>
+                <p>it&#39;s not as if this game is awful. it&#39;s fine. but i just end up thinking throughout the entire game &quot;what if phoenix wasn&#39;t here?&quot; &quot;what if apollo or athena got this case?&quot; &quot;why the fuck did maya get kidnapped again are they out of ideas?&quot; it feels like pandering to capcom higher ups because they never played past the first case of AA1 and think that phoenix is the only thing that sells ace attorney games.</p>
+                <p>they learned from absolutely NONE of their mistakes from dual destinies (other than maybe a slightly more climactic ending?). this game feels like an absolute waste of some of the most likable and interesting characters in all of gaming. </p>
+                <p>you HAVE the foundation!! you HAVE apollo, and athena, and trucy, and nahyuta, and an idea of where you want to go with apollo&#39;s backstory, and an interesting raise of stakes with the DC act, yet all of this is thrown away because phoenix needs to be here.</p>
+                <p>i don&#39;t dislike spirit of justice. but i can&#39;t truly say that i had a great time with it either. it&#39;s an incredibly frustrating game because i see exactly how it could be better, but it just... isn&#39;t. that&#39;s how i would describe spirit of justice. it just isn&#39;t.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">phoenix wright: ace attorney - spirit of justice</title>
+    <meta name='description' id="description" content="same problem with development as its predecessor, just with different characters.">
+    <meta name='date' id="date" content = "2024-06-09">
+    <meta name='keywords' content='review, mystery, visualnovel'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

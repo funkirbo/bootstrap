@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "valley peaks";
+    let description = `for a climbing game, the climbing is kind of one-dimensional.`;
+    let date = "2025-08-07";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/valley peaks.webp";
+    let score = 6;
+    let developer = "Tub Club";
+    let publisher = "Those Awesome Guys";
+    let year = 2024;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3198656/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/valley-peaks";
+
+    // gap for spacing
+    let content = `
+                <p>valley peaks is cute.</p>
+                <p>it&#39;s very reminiscent of <em>a short hike</em> in its aesthetic. it&#39;s warm-colored near the start, cooler near the end. you climb mountains. you&#39;re an anthropomorphic animal.</p>
+                <p>...</p>
+                <p>that&#39;s really it, honestly, but you see what i mean, right? the general vibe is much the same. climb a mountain, achieve your goal, and drop down and do it all again. valley peaks is more focused on the climbing aspect instead of other movement and progression, but the formula is much the same.</p>
+                <p>there&#39;s 2 big differences, though, and those differences make <em>a short hike</em> stand out and <em>valley peaks</em> blend in: the climbing mechanics, and the story.</p>
+                <p>a short hike thrived in its simplicity, because climbing the mountain was really more of a platforming challenge. progression wasn&#39;t a checklist, but a series of soft blocks stopping you from going further. collecting golden feathers was recommended, but never fully required, and that freedom made the game feel a lot less harsh.</p>
+                <p>valley peaks is the opposite. progression is extremely defined, being your ascent of all 11 mountains. you gain powerups for completing an explicit number of paths up the mountains, and you gain an explicit ability or ability upgrade each time you do so. it&#39;s not bad if your game was meant to be progressed like a traditional game, but for something so obviously trying to not be taken super seriously, it feels a little too demanding, at times. it&#39;s not even that this approach is bad - the game is still quite fun, and the progression can be really satisfying - but it feels contradictory to what the game is trying to do.</p>
+                <p>the punishment for failure is also extremely harsh - you fail, you fall all the way back down. it&#39;s similar to many rage games, honestly, which lends itself even further away from the cozy vibe that the atmosphere is obviously going for. it&#39;s still fun, and i think it makes the challenge of climbing the mountain in full even more satisfying, but it just doesn&#39;t fit together with the aesthetic.</p>
+                <p>now, you may argue that the game isn&#39;t trying to be cozy; that it&#39;s more focused on climbing, and that the more punishing climbing mechanics imply that. but that line of thinking causes even more problems: if the game was truly focused on the climbing and climbing only, why are there abilities? and why are the climbing mechanics so simple?</p>
+                <p>a similar thing happens with the story: it just feels disjointed. it&#39;s trying to be a heartfelt story of following in your father&#39;s footsteps, but it&#39;s <em>also</em> trying to be a critique of capitalist companies taking advantage of employees and rural communities, and those two things just can&#39;t overlap. in the heartfelt moments, you remember the radio man telling you how good your actions are for the company, and in the critiquing moments, the game reminds you that you&#39;re doing this for your dad. it doesn&#39;t line up.</p>
+                <p>a short hike focuses mainly on climbing the mountain to talk to your mom. there&#39;s not much outside of that to focus on; the story experience mainly comes from the various characters you interact with on your way up said mountain. it&#39;s cute, focuses more on claire&#39;s quest to make it up the mountain, and builds a fun sense of community throughout the island.</p>
+                <p>it feels like valley peaks wants to be 2 different games. one a cozy mountain climber focused on a heartfelt story of following in your dad&#39;s footsteps, and the other a harder-core climbing game with a heavier focus on the flaws of the capitalist system. both sound like fun, but combined together, it makes a disjointed feeling game. not bad, still mechanically fine, but it fails to really accomplish being either game it wants to be.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">valley peaks</title>
+    <meta name='description' id="description" content="for a climbing game, the climbing is kind of one-dimensional.">
+    <meta name='date' id="date" content = "2025-08-07">
+    <meta name='keywords' content='review, 3dplatformer, platformer, openworld, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

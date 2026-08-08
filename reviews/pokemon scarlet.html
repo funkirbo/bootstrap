@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "pokemon scarlet";
+    let description = `somehow both a complete mess and the most innovative mainline pokemon game in a while.`;
+    let date = "2024-01-22";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/pokemon scarlet.webp";
+    let score = 7;
+    let developer = "Game Freak";
+    let publisher = "Nintendo";
+    let year = 2022;
+    let console = "switch";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1315510/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/pokemon-scarlet";
+
+    // gap for spacing
+    let content = `
+                <p>pokemon scarlet is a mess. it runs like garbage, somehow <em>worse</em> than SW/SH AND legends arceus, which is a feat. the intro is 2 hours of straight dialogue, half the characters are either rebelling rich kids, a felon, or a guy with mommy issues, with consistent glitches throughout.</p>
+                <p>yet somehow, i found myself entranced through my 25 hours of playtime. the open-world and triple quest line adds a ton of stuff to do. i like the new setup of how everything is set out from the start, though i do wish levels scaled with gyms &amp; weren&#39;t set. the glitches and awful story are both so goofy that i couldn&#39;t help but laugh.</p>
+                <p>i think that&#39;s why i liked pokemon scarlet so much. a good chunk of the flaws are just so fucking stupid that i just laughed them off, and the others were good concepts with flawed execution. if given more time to polish, game freak could&#39;ve made an excellent game. unfortunately, the game is just a messy clusterfuck that i still enjoyed quite a bit.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">pokemon scarlet</title>
+    <meta name='description' id="description" content="somehow both a complete mess and the most innovative mainline pokemon game in a while.">
+    <meta name='date' id="date" content = "2024-01-22">
+    <meta name='keywords' content='review, rpg, turnbased'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

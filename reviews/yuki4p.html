@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "yuki's palpitating, passionate, phenomenal, and quite frankly proficient quest for a hot girlfriend!!!";
+    let description = `dude it's like 30 minutes of pure yuri fluff, what do you want me to say`;
+    let date = "2026-05-13";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/yuki4p.webp";
+    let score = 7;
+    let developer = "milkkylemon";
+    let publisher = "milkkylemon";
+    let year = 2021;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/4611754/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/yukis-palpitating-passionate-phenomenal-and-quite-frankly-proficient-quest-for-a-hot-girlfriend";
+
+    // gap for spacing
+    let content = `
+                <p>sometimes i write long, over-the-top reviews, because i have a lot of feelings about a game. this will not be one of those reviews. i fundamentally refuse to spend more than 10 minutes writing a review about a half-hour long yuri visual novel that can be summed up as &quot;cute poly goodness without a gram of irony behind any of it&quot;. so, as a little writing challenge, i am setting a 10 minute timer and writing as much as i can within that time frame. nothing more, nothing less.</p>
+                <p><em>yuki4p</em> is adorable. the art is great, the music is bubbly, and the writing is light-hearted and silly. the main character is a lesbian mess, and each of the side characters are plays on various tropes seen throughout romance anime and visual novels. there is absolutely no depth, no room for doubt, and no nuance to literally anything here; you can (and should) take everything at face value. there is nothing particularly new or exciting about this game.</p>
+                <p>is that a bad thing? no, not really. it&#39;s just kind of how it is. the writing is pretty good, though it is very... fan-fiction-y? if you&#39;ve read any fan-fiction, you&#39;ll kind of know what i mean; it feels pretty raw, unprofessional and largely unedited. once again, i wouldn&#39;t call it a terrible thing, it&#39;s just how it&#39;s written. it doesn&#39;t seem like there was a lot of effort in making this some polished, superb product, and that&#39;s totally fine. spica is the sparkly, sweep-you-off-your-feet girl, and her dialogue is the most distinct to me, at least. chinatsu is the soft, cuddly one, and she&#39;s nice, and haruka is the most &quot;serious&quot; of the trio (though that isn&#39;t saying much). their routes are distinct enough to feel fun, and the main ending has you dating all 3, which is cute.</p>
+                <p>it&#39;s cute, it&#39;s a fun read, and it&#39;s extremely fluffy. if you want something silly and fun to spend an afternoon reading (and you&#39;re out of any fan-fiction of your favorite characters kissing), and this style of cheesy yuri is your thing, it won&#39;t disappoint.</p>
+                <p>...</p>
+                <p>fuck, the timer went off three minutes ago.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">yuki's palpitating, passionate, phenomenal, and quite frankly proficient quest for a hot girlfriend!!!</title>
+    <meta name='description' id="description" content="dude it's like 30 minutes of pure yuri fluff, what do you want me to say">
+    <meta name='date' id="date" content = "2026-05-13">
+    <meta name='keywords' content='review, visualnovel, romance, lgbtq+'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

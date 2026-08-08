@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "valkyrie saga";
+    let description = `passionate, yet unfortunately underbaked.`;
+    let date = "2026-07-03";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/valkyrie saga.jpg";
+    let score = 5;
+    let developer = "Public Void";
+    let publisher = "Public Void";
+    let year = 2026;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/4889518/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/valkyrie-saga";
+
+    // gap for spacing
+    let content = `
+                <p>i praise a lot of indie developers for trying new, exciting things. the execution isn&#39;t always perfect, especially for smaller teams or solo devs, but being willing to take the risk and make something unique and singular is something i can applaud. <em>valkyrie saga</em> has a genuinely interesting heavenly theming, a distinct color palette, and a progression system similar to <em>a short hike</em> while not feeling like a clone of that game. there&#39;s great movement abilities to play around with, and the platforming feels pretty tight. i can cut a little bit of slack for a game if the core systems are really fun, and <em>valkyrie saga</em> has its moments, especially early on.</p>
+                <p>there&#39;s only so much i can give, though, before i just get frustrated, and this game is far over what i can bear. i&#39;m okay with small bugs and glitches, or an inconsistent art style, or some underbaked mechanics. <em>valkyrie saga</em> just doesn&#39;t function at moments; throughout my three-hour playtime, i got stuck on invisible crevices in the ground five or six times, didn&#39;t stick to walls in certain spots yet sticking to other spots on the same exact surface, clipped through multiple different walls, had spells not work as intended, and encountered COUNTLESS visual bugs that significantly impacted the experience.</p>
+                <p>even without the errors, i don&#39;t think this game&#39;s visual style was executed very well. the idea behind it is really cool, and the heavenly look really works well with the PSX style, but the world as a whole feels so... empty. there&#39;s a reason games in this late-90s, overtly-polygonal style usually stick to contained spaces and tight dungeons; this blocky style of level design doesn&#39;t work in an open-world unless your entire game is specifically designed around making it work.</p>
+                <p>the same complaint also applies to the gameplay. <em>valkyrie saga</em>&#39;s &quot;open world&quot; is really just a bunch of vaguely connected cities that you travel between, all of which have their own main mission that ends in you getting another crystal. they&#39;re fun little platforming challenges that push roll&#39;s ever-growing moveset to its limit, and they&#39;re genuinely well-designed and engaging. it&#39;s just that... well, you actually have to travel to get to them, which kind of sucks. when a quarter of my playtime is spent just running around your world, treading from place to place, that world better have something fun for me to do, or look at, or listen to. the island just doesn&#39;t, most of the time.</p>
+                <p>narratively, the game&#39;s &quot;story&quot; is told entirely through optional dialogue with the island&#39;s constituents, outside of a few mandatory plot moments near the beginning and the end. learning more about roll&#39;s role (ha) as a valkyrie, what both roll specifically and other valkyries have done to help this island in the past, and how heaven and the gods work in this game&#39;s society is really interesting. roll isn&#39;t super fleshed out herself, but getting to talk with various people about their everyday lives and how they cope with impending doom is fun. conversations flow nicely, and unlike some other &quot;lore-focused&quot; games that drip feed tiny bits of information with no real conclusion, you can find legitimate answers here, if you dig far enough. it&#39;s a nice change of pace from other similarly-formatted stories.</p>
+                <p>frustratingly, i can see the exact vision the developers were going for; exploring a small open world with interesting dialogue, multiple endings, and tight platforming sounds really cool, and the more serene setting is a really nice, rather unique touch that could&#39;ve set <em>valkyrie saga</em> apart from its contemporaries. had this game taken the <em>super mario 64</em> approach, with the game&#39;s large, intricately-designed platforming challenges being placed in smaller worlds with secrets scattered around, i think there could&#39;ve been something really cool there. having the hub world be heaven itself, with roll being sent down from the gods to save each area of this island individually? neat!</p>
+                <p>granted, i&#39;m also not a game designer, so that whole idea is probably harder to implement than it sounds, but still. the pieces for something excellent are here, i&#39;m just disappointed in how everything connected. this is clearly a relatively small team (who, i&#39;ve learned through my tiny amount of research, are australian, which is neat) of artists and programmers who are making games for fun, so i don&#39;t want to bash them too hard. it just feels like <em>valkyrie saga</em> either needed a couple more months of development to feel more complete in its current state, or a full reimagining of the concept to allow the interesting ideas to shine.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">valkyrie saga</title>
+    <meta name='description' id="description" content="passionate, yet unfortunately underbaked.">
+    <meta name='date' id="date" content = "2026-07-03">
+    <meta name='keywords' content='review, 3dplatformer, platformer, openworld, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

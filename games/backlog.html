@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>backlog - games</title>
+
+    <meta name='description' content="all of my backlogged games.">
+    <meta name='date' content = "2026-07-31">
+
+    <meta name='keywords' content='index'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <meta name='rating' content='General'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+    <script src = "../style/js/papaparse.min.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+<body id = "body" style = "min-height: 100vh;display: grid;grid-template-rows: auto auto auto 1fr;">
+    <div class = "mb-1 p-3 text-start text-white">
+        <h1 class = "p-1 m-1 pb-2 border-bottom border-2 border-dark-subtle">backlog</h1>
+    </div>
+    <div class = "mb-1 p-3 m-3 mt-0">
+        <div class = "row">
+            <div class = "col-md-3 mb-2">
+                <select class = "form-select" id = "finsortby" onchange="reloadFinished()">
+                    <option selected value = "A-Z">A-Z</option>
+                    <option value = "Z-A">Z-A</option>
+                </select>
+            </div>
+            <div class = "col-md-9">
+                <form class="d-flex" role="search" onsubmit="return false;">
+                    <input id = "finsearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onsearch='reloadFinished()'/>
+                    <button class="btn" type="button" id = "finsearchbtn" onclick='reloadFinished()'>Search</button>
+                </form>        
+            </div>
+        </div>
+    </div>
+    <div class = "mb-1 p-1 text-center">
+        <div class = "p-2 pb-0 ft-border ms-5 me-5 mb-3" id = "countborder">
+            <h5 class = "text-white" id = "totalcount"></h5>
+        </div>
+        <table class = "table p-3 align-middle">
+            <thead>
+                <th scope = "col">Game</th>
+                <th scope = "col">Console</th>
+            </thead>
+            <tbody id = "finbody">
+            </tbody>
+        </table>
+        <div id = "loader" class = "visually-hidden">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function finishedTableElement(game, notes, console)
+        {
+            document.getElementById("finbody").innerHTML +=(`
+            <tr class = "bg-objects p-3">
+                <td>${game} <span style = "font-size: .7rem;">${notes}</span></td>
+                <td>${console}</td>
+            </tr>
+            `)
+        }
+
+        function resetFinished()
+        {
+            document.getElementById("finbody").innerHTML = "";
+        }
+
+        async function reloadFinished()
+        {
+            let totalcount = 0;
+
+            document.getElementById("loader").classList.remove("visually-hidden");
+            document.getElementById("totalcount").textContent = "";
+            document.getElementById("countborder").classList.remove("ft-border");
+
+            searchkey = document.getElementById("finsearch").value.toUpperCase();
+            sortby = document.getElementById("finsortby").value;
+
+            resetFinished();
+            await fetch("../data/funkirbo's Spreadsheet - Backlog - Games.csv")
+            .then(res => res.blob())
+            .then(blob => {
+                //console.log(blob);
+                const csvfile = new File([blob], "text/csv", { type: blob.type });
+                //console.log(csvfile);
+                Papa.parse(csvfile,
+                    {
+                        header: true,
+                        complete: function(results) {
+                            // console.log(results.data);
+                            switch(sortby)
+                            {
+                                case "A-Z":
+                                    results.data.sort((a,b) => a.Game.localeCompare(b.Game));
+                                    break;
+                                case "Z-A":
+                                    results.data.sort((a,b) => b.Game.localeCompare(a.Game));
+                                    break;
+                                default:
+                                    results.data.sort((a,b) => a.Game.localeCompare(b.Game));
+                                    break;
+                            }
+                            results.data.forEach(game => {
+                                if (game.Game.toUpperCase().includes(searchkey))
+                                {
+                                    finishedTableElement(game.Game, game.Notes, game.Console);
+                                    totalcount += 1;
+                                }
+                                document.getElementById("totalcount").textContent = "Total Games: " + totalcount;
+                            });
+                        },
+                        error: function(error) {
+                            console.error(error.message);
+                        }
+                    }
+                );
+            })
+            document.getElementById("loader").classList.add("visually-hidden");
+            document.getElementById("countborder").classList.add("ft-border");
+        }
+
+        reloadFinished();
+
+        window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            // Reloads the entire window from scratch
+            window.location.reload(); 
+        }
+        });
+    </script>
+    </script>
+</body>
+<script>
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+
+</html>

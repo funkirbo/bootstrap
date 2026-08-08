@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "kirby & the amazing mirror";
+    let description = `an interesting genre switchup for everyone's favorite pink puffball.`;
+    let date = "2026-02-15";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/kirby and the amazing mirror.webp";
+    let score = 8;
+    let developer = "Dimps";
+    let publisher = "Nintendo";
+    let year = 2004;
+    let console = "gba";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/4173522/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/kirby-and-the-amazing-mirror";
+
+    // gap for spacing
+    let content = `
+                <p>the <em>kirby</em> series has never been one to shy away from trying new things. since the little guy&#39;s first appearance, kirby has explored a ton of different variations on 2D platformers. <em>super star</em> is a collection of sub-games. <em>crystal shards</em> uses 3D camera angles, models and backgrounds despite being a 2D game at its core. <em>canvas curse</em> and <em>rainbow curse</em> can barely be described as platformers; you have no control over kirby himself, just over how he moves. it&#39;s really interesting.</p>
+                <p><em>amazing mirror</em>&#39;s concept is pretty simple: it&#39;s just a <em>kirby</em> spin on a metroidvania. it&#39;s a really neat idea that pretty seamlessly combines the copy ability gimmick with a more open level structure. what makes <em>kirby</em> games so fun - the simple and well-balanced level design, varied copy abilities, and the upbeat vibes - is still here, just with a larger focus on exploration instead of just reaching the end of a set of levels. it&#39;s kind of a surprise that this kind of style was a one-off, honestly.</p>
+                <p>structurally, <em>amazing mirror</em> is somewhere between a traditional metroidvania and a kirby game. there&#39;s 5 different &quot;branches&quot;, all of which stem from the hub world. you explore screens and paths however you please, but each &quot;branch&quot; consists 2 worlds, both of which have a pretty concrete end where you beat a boss and collect a mirror shard. you get just enough freedom to make it to the end as you please, and there&#39;s plenty of bonuses and chests on the way for those who want to delve a little deeper into the game&#39;s secrets, but it&#39;s also not a complete 180 from the series&#39; more linear style.</p>
+                <p>between the 5 branches, the hub world, and the <strong>mirror world</strong> (which is not really a spoiler, given that your entire goal is to reach the <strong>mirror world</strong> in the first place), there&#39;s 10 separately themed sections here. each one, despite being based on a pretty standard elemental theme, builds that theme up into something really interesting. mustard mountain is the game&#39;s lava section, and because you&#39;re, well, on a mountain, the section is more linear, with a focus on leaving and re-entering through different sections to continue down the main path. peppermint palace is an ice section in a palace, which has many looping paths and confusing entrances and exits. they&#39;re pretty barebones themes at first, but the way the game plays with level design to amplify the theming is really cool.</p>
+                <p>it&#39;s not perfect or anything. the emphasis on multiplayer kind of... sucks, honestly, given that the game came out for the GBA. finding another soul to play with sounds like an absolute nightmare, and the multiplayer mechanics themselves aren&#39;t super fleshed out. the map system is also a little shaky, given that you only unlock each area&#39;s map through a button whose locations vary from &quot;basically on the main path&quot; to &quot;holy fuck that&#39;s nine rooms out of the way, and would lead me down a path of no return&quot;. there are also moments during some of the game&#39;s mazier sections where finding the next path forward is a little unclear, or sometimes straight up impossible without backtracking. given that this is the first (and to this point, only) <em>kirby</em>-troidvania, though, i can cut it a little slack.</p>
+                <p><em>kirby and the amazing mirror</em>, despite being a little unpolished, is definitely worth your time if you&#39;re looking for something a little different from the standard <em>kirby</em> fare. granted, the standard <em>kirby</em> fare doesn&#39;t really exist, but it&#39;s another unique style in a series of unique styles.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">kirby & the amazing mirror</title>
+    <meta name='description' id="description" content="an interesting genre switchup for everyone's favorite pink puffball.">
+    <meta name='date' id="date" content = "2026-02-15">
+    <meta name='keywords' content='review, 2dplatformer, platformer, metroidvania'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

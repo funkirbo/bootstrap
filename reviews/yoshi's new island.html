@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "yoshi's new island";
+    let description = `soulless.`;
+    let date = "2025-11-30";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/yoshi's new island.webp";
+    let score = 2;
+    let developer = "Arzest";
+    let publisher = "Nintendo";
+    let year = 2014;
+    let console = "3ds";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3682774/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/yoshi-s-new-island";
+
+    // gap for spacing
+    let content = `
+                <p>i rarely describe a game as &quot;soulless.&quot; it&#39;s an insult i don&#39;t like to levy towards any piece of art, because it implies that the people behind the game aren&#39;t passionate in the slightest. it implies that a game was made fully to please higher-ups with a proven formula. to be soulless means you must be fully and truly a product.</p>
+                <p>that label, at least for me, usually applies to yearly releases. <em>madden</em> is soulless. <strong>modern</strong> <em>call of duty</em> is soulless. <em>nba 2k</em> is soulless, except for the year they got the players to voice act. that one was alright.</p>
+                <p><em>yoshi&#39;s new island</em> is soulless. it is an amalgamation of everything <em>yoshi&#39;s island</em>, thrown into an algorithm and grinded down into a paste of pure &quot;<em>yoshi</em>&quot;, which is then spread thin across the most bland, average platformer you could ever think of. it truly feels like nintendo just needed something <em>yoshi</em>-related out on 3ds, and decided to go to... arzest.</p>
+                <p>arzest is not a studio you go to when you need a fantastic video game. the makers of the wondrous <em>balan wonderworld</em>, arzest are a studio that are there for when a major company just needs a game out, regardless of quality. they&#39;re not a studio anybody is aspiring to be.</p>
+                <p>when handed the <em>yoshi&#39;s island</em> ip, they likely were told the game needed to pass the eye test: make it look like <em>yoshi&#39;s island</em>, sound like <em>yoshi&#39;s island</em>, and play enough like <em>yoshi&#39;s island</em>. nintendo needed a game they could advertise, and arzest delivered. they handed nintendo a game that they could feed to both kids and nostalgic adults alike.</p>
+                <p>the problem is, though, is that&#39;s <em>all</em> they did. the level design is abhorrent. the game hands out lives like candy on halloween. the bosses are awful, the story is awful. even the art style and music start to get bland after a while because <em>there is nothing new.</em> the life, the essence, what made <em>yoshi&#39;s island</em> so refreshing... it&#39;s gone.</p>
+                <p>the worst part about all of it, ironically, is that it&#39;s not unredeemable. it&#39;s not mechanically terrible, the rehashed aesthetics are still really nice looking, and the game being really easy makes it accessible.</p>
+                <p>i can&#39;t even laugh at it. it&#39;s not a catastrophic failure. <em>2k</em> getting the players to voice act was a catastrophic failure, but at the very least, it was interesting. they <em>tried</em>. nothing here feels like arzest tried. they did exactly what they were told. they did the bare minimum when it came to making a new <em>yoshi</em> game. they completed their job, got paid, and hitched a contract with nintendo to make another poorly-received spinoff of a different franchise in <em>hey! pikmin</em>.</p>
+                <p>it&#39;s tragic. it&#39;s not necessarily <em>uncommon</em> to see games in this vein come out, especially as companies realize that nostalgia is a feeling they can abuse.</p>
+                <p>still. it doesn&#39;t make it any less tragic.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">yoshi's new island</title>
+    <meta name='description' id="description" content="soulless.">
+    <meta name='date' id="date" content = "2025-11-30">
+    <meta name='keywords' content='review, 2dplatformer, platformer'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

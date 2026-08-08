@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "ape escape";
+    let description = "those monkeys are wreaking some HAVOC!";
+    let date = "2025-07-08";
+
+    // no need to re-enter anywhere
+    let image = "images/ape escape.webp";
+    let score = 7;
+    let developer = "SCE Japan Studio";
+    let publisher = "Sony";
+    let year = 1999;
+    let console = "ps1";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3059947/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/ape-escape";
+
+    // gap for spacing
+    let content = `
+                <p>it&#39;s damn hard to make a game that exudes more 90s &quot;feel&quot; than ape escape. the bright rainbow colors, the strumming drum and bass playing at every moment, the campy and downright hilarious voice acting. no game i have ever played is more representative of the time it was made than ape escape.</p>
+                <p>even the genre is as late 90s as you can get; 3d platformers were booming at the time, with every company trying to get their foot in the ring with their own fresh take on the genre. ape escape differentiates itself pretty well, being a collect-a-thon that puts extra emphasis on the collecting. running around, catching a variety of apes in a variety of eras, jumping through time and messing with new gadgets, is a really solid concept, executed pretty well.</p>
+                <p>the iconic 90s feel does come with some pretty severe downsides, though; level design can be rather frustrating at times, and the camera is downright atrocious. for a game so focused on the player capturing rather small animals, your perspective is anything but stable, making actually getting the little guys much harder than it should be.</p>
+                <p>but a lot of my complaints can be excused, just because this game looks and sounds fantastic. it&#39;s not that ape escape lacks substance, it&#39;s that the style is so good that it often takes over. the goofy voice acting and goofier enemies have this level of childlike whimsy to the game. it reminds you that, yes, you&#39;re playing a game where apes are taking over different eras of history, and you&#39;re capturing them with a fucking net.</p>
+                <p>it&#39;s good. not great, but as 90s 3d platformers go, this one stands out in a good way. better than something like gex or bubsy, at least.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">ape escape</title>
+    <meta name='description' id="description" content="those monkeys are wreaking some HAVOC!">
+    <meta name='date' id="date" content = "2025-07-08">
+    <meta name='keywords' content='review, platformer, 3dplatformer, collectathon'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

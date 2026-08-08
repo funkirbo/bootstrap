@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "pokemon sword";
+    let description = `just... kind of boring, even for modern pokemon standards.`;
+    let date = "2024-01-24";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/pokemon sword.webp";
+    let score = 4;
+    let developer = "Game Freak";
+    let publisher = "Nintendo";
+    let year = 2019;
+    let console = "switch";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1320762/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/pokemon-sword";
+
+    // gap for spacing
+    let content = `
+                <p>pokemon sword is significantly worse than legends arceus or scarlet. by a long shot.</p>
+                <p>with both legends arceus and scarlet, i could laugh at the story. both were pretty stupid (scarlet moreso), but there was also enough fun stuff that i could excuse the stupidity a little bit.</p>
+                <p>sword&#39;s story is just... boring. nothing new or exciting happens. while pokemon is a kid&#39;s game, sword makes that most apparent. it feels like a shitty rehash of past pokemon stories with all the witty writing and charm removed. the legendary pokemon are both boring as hell, and none of the characters have any traits that stand out in any way. </p>
+                <p>the battle system stays majority unchanged from games prior, with dynamaxing replacing z-moves and mega evolution. is making pokemon big boring? yes. is seeing fat pikachu still fun? yes. not a super interesting gimmick all around though.</p>
+                <p>visually, it&#39;s better than S/V and legends arceus, but not by too much. it&#39;s stylistically very plain, especially in comparison to the more interesting designs from both games that followed. the music is pretty solid though.</p>
+                <p>in one word: boring. 
+                in three: boring and derivative.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">pokemon sword</title>
+    <meta name='description' id="description" content="just... kind of boring, even for modern pokemon standards.">
+    <meta name='date' id="date" content = "2024-01-24">
+    <meta name='keywords' content='review, rpg, turnbased'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

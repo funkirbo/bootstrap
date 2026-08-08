@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "pokemon moon";
+    let description = `some interesting differences between this and other pokemon games, even if not everything lands perfectly.`;
+    let date = "2024-12-28";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/pokemon moon.webp";
+    let score = 6;
+    let developer = "Game Freak";
+    let publisher = "Nintendo";
+    let year = 2016;
+    let console = "3ds";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2237300/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/pokemon-moon";
+
+    // gap for spacing
+    let content = `
+                <p>there are some pretty interesting themes at play here, especially surrounding lillie, but it&#39;s kind of hindered by being a pokemon game. a modern one, at that.</p>
+                <p>let me explain: there&#39;s a level of complexity, depth, and detail that game freak just can&#39;t get into, because they have to aim for the pokemon audience. there could&#39;ve been a really interesting look into lusamine&#39;s child... abuse? neglect? and her behavior towards lillie and gladion, and how that compares to how hala treats hau. instead, there&#39;s just a lot of scenarios and backstory that gets glossed over and not given the weight it deserves.</p>
+                <p>same thing with the gameplay. the z-moves <em>could</em> be a really interesting mechanic, but it ends up trivializing a lot of the standard trainer battles, and makes the optimal plan having 1-2 strong pokemon and using the other 4 to farm potions and stall.</p>
+                <p>i really quite like the changed up progression system, though, and it allows the captains and kahunas to have more of a presence and a personality. i remember mallow, acerola, and hala more than any of the gym leaders from games prior. there&#39;s also a genuine, useful reward for clearing trials, by allowing for more z-move types.</p>
+                <p>there&#39;s some genuinely interesting ideas here; some of them are more fleshed out than others, but i can respect game freak for changing up the style (even if it ended up falling a little flatter than i&#39;d like)</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">pokemon moon</title>
+    <meta name='description' id="description" content="some interesting differences between this and other pokemon games, even if not everything lands perfectly.">
+    <meta name='date' id="date" content = "2024-12-28">
+    <meta name='keywords' content='review, rpg, turnbased'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

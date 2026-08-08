@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "doom";
+    let description = `run and shoot. cake your suit in blood. repeat.`;
+    let date = "2025-01-18";
+
+    // no need to re-enter anywhere
+    let notes = "2016"
+    let image = "images/doom (2016).webp";
+    let score = 8;
+    let developer = "id Software";
+    let publisher = "Bethesda Softworks";
+    let year = 2016;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2330155/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/doom--2";
+
+    // gap for spacing
+    let content = `
+                <p>it&#39;s 1993. you just started playing <em>doom</em>, and you LOVE it. you talk to your friend about it, because, frankly, you just want to tell someone how cool this game is.</p>
+                <p>&quot;so you shoot all these demons, right? they come from hell dimensions and portals and stuff! you can give &#39;em a big old punch and BAM! they explode! you&#39;ve got shotguns, you&#39;ve got machine guns, hell, one of the guns just kills em all! the game just blasts some hardass music and it&#39;s super awesome! it&#39;s so cool!&quot;</p>
+                <p>in their mind, what they imagine is doom <em>2016</em>, which is, in fact, a game where you have shotguns and machine guns, and spend all your time just shooting wave after wave of demons. they dream of spending their time running around, holding a massive gun in a massive suit of armor, glory killing anything that gets even close; running around the dense, foggy areas of hell; opening portals to other dimensions, and killing anything in sight. looks great, sounds better, it&#39;s a little mindless, but a blast.</p>
+                <p>when they show up to your pc, in its cream colored perfection, and you boot up doom <em>1993</em>, they&#39;re a little disappointed; less so in the game, and more so in their expectations.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">doom</title>
+    <meta name='description' id="description" content="run and shoot. cake your suit in blood. repeat.">
+    <meta name='date' id="date" content = "2025-01-18">
+    <meta name='keywords' content='review, fps, shooter'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

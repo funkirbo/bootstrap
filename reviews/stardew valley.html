@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "stardew valley";
+    let description = `a surprisingly un-chill farming game.`;
+    let date = "2025-04-24";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/stardew valley.webp";
+    let score = 8;
+    let developer = "ConcernedApe";
+    let publisher = "ConcernedApe";
+    let year = 2016;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2700880/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/stardew-valley";
+
+    // gap for spacing
+    let content = `
+                <p>legitimately, i played this game for 32 hours in 3.5 days. my sleep schedule was irreparably fucked and i missed at least 1 alarm.</p>
+                <p>despite my rather... diminutive levels of sleep, i had an absolute blast playing through stardew valley! this game is fun as all hell, full of personality and charm, and is a nice change of pace from other &quot;cozy&quot; games.</p>
+                <p>i&#39;m not even sure i can classify this as a cozy game; there&#39;s always another task to do, another item to check off. every day has a minimum of 4-5 different tasks you&#39;ve gotta do, alongside becoming closer with the townsfolk through gifts. it&#39;s a good bit of pressure to get that all done in a rather short day, and it doesn&#39;t necessarily feel calm a good chunk of the time. that kind of works to its benefit a lot of the time; there&#39;s a lot less downtime than in comparable games, which makes each moment feel more engaging through a rather long main quest.</p>
+                <p>i also really like the aforementioned friendship mechanics. marrying someone is absolutely adorable, and each character feels fleshed out and real. their arcs are reasonable and down-to-earth. i personally married sebastian, and his arc of... basically having depression and being stuck at home... felt a little too close to home, sometimes. the fact that a farming game has one of the least dramatized representations of day-to-day depression is extremely funny to me. needless to say, the writing is really, really well done.</p>
+                <p>my largest issue comes kind of comes with the genre as a whole: this game becomes EXTREMELY grindy. i think my brother put it best: &quot;everything ramps up in price really fast.&quot; that checklist of things to do each day becomes extremely repetitive, as the optimal ways to grind for stuff aren&#39;t very interesting.</p>
+                <p>either way, i still had a great time with stardew valley. it&#39;s likely the best farming game i&#39;ve ever played (which granted is a relatively low bar), and fits a different pace and style than most other games in the genre, which is nice. a very solid game. :)</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">stardew valley</title>
+    <meta name='description' id="description" content="a surprisingly un-chill farming game.">
+    <meta name='date' id="date" content = "2025-04-24">
+    <meta name='keywords' content='review, farming, simulator, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

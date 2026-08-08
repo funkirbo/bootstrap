@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "coffee talk";
+    let description = `a cozy, comfortable little bartending experience.`;
+    let date = "2024-01-22";
+
+    // no need to re-enter anywhere
+    let image = "images/coffee talk.webp";
+    let score = 7;
+    let developer = "Toge Productions";
+    let publisher = "Chorus Worldwide";
+    let year = 2020;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1315104/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/coffee-talk";
+
+    // gap for spacing
+    let content = `
+                <p>creating a realistic emotional core is difficult, especially in video games. a major perk of the spectator of the story having some input is the connection the player creates, but that connection is hard to upkeep when the player can also... be wrong, or worse, purposely try to wreak havoc.</p>
+                <p>coffee talk takes a pretty novel approach to this dilemma. you take the role of a spectator as a spectator, instead of being entangled in any of the stories you may hear. the fun of the game is creating the drinks that you see the characters drink, how those drinks may change based on a character&#39;s development, and watching them grow alongside their coffee.</p>
+                <p>now, the problem with this approach is easy to see; by allowing the story to run its course naturally, the player has very little actual input into how the story moves along; you have to fuck up pretty bad before anything truly consequential happens. this makes, y&#39;know... playing the game... not all that fun at times. it&#39;s not a mechanically deep visual novel by any means.</p>
+                <p>luckily, there&#39;s plenty of excellent plot lines to focus on. the intertwining stories work together perfectly, and your player-character isn&#39;t a personality-less void. all that contributes to a rock-solid narrative that feels genuine in every sense of the word.</p>
+                <p>the best part is watching each character, or couple, evolve through each visit. sometimes you&#39;ll miss characters for a couple of days, and they&#39;ll come back with a new problem facing their life. sometimes a character just comes in to update you on their shitty day, needing someone to vent to. each individual has their own problems, and each relies on you to provide some reprieve. ironically, your role as a spectator is all they need; just someone to nod and agree, nothing more.</p>
+                <p>i do wish this game either delved deeper into the coffee making mechanics, just because it&#39;d keep the rather boring in-between segments feeling fresher. for a short visual novel, though, i think coffee talk accomplishes what it wants to really well.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">coffee talk</title>
+    <meta name='description' id="description" content='a cozy, comfortable little bartending experience.'>
+    <meta name='date' id="date" content = "2024-01-22">
+    <meta name='keywords' content='review, visualnovel, simulator, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

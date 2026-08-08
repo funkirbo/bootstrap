@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>collection</title>
+
+    <meta name='description' content="all of the games in my collection.">
+    <meta name='date' content = "2026-07-31">
+
+    <meta name='keywords' content='index'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <meta name='rating' content='General'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href = "style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "style/js/bootstrap.bundle.min.js"></script>
+    <link href = "style/global.css" rel = "stylesheet">
+
+    <script src = "style/js/customelements.js"></script>
+    <script src = "style/js/papaparse.min.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNav(false, false, false, true, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+<body id = "body" style = "min-height: 100vh;display: grid;grid-template-rows: auto auto auto 1fr;">
+    <div class = "mb-1 p-3 text-start text-white">
+        <h1 class = "p-1 m-1 pb-2 border-bottom border-2 border-dark-subtle">collection</h1>
+    </div>
+    <div class = "mb-1 p-3 m-3 mt-0">
+        <select class="form-select mb-2" aria-label="Default select example" id = "colselect" onchange="reloadCollection()">
+            <option selected value = "">All Consoles</option>
+            <option value="3DS">3DS</option>
+            <option value="DS">DS</option>
+            <option value="Gamecube">Gamecube</option>
+            <option value="GB/GBC">GB/GBC</option>
+            <option value="GBA">GBA</option>
+            <option value="N64">N64</option>
+            <option value="PC">PC</option>
+            <option value="PS1">PS1</option>
+            <option value="PS2">PS2</option>
+            <option value="PS3">PS3</option>
+            <option value="PS4">PS4</option>
+            <option value="PSP">PSP</option>
+            <option value="Quest">Quest</option>
+            <option value="Switch">Switch</option>
+            <option value="Switch 2">Switch 2</option>
+            <option value="Wii">Wii</option>
+            <option value="Wii U">Wii U</option>
+            <option value="XBOX One">XBOX One</option>
+        </select>
+        <div class = "row">
+            <div class = "col-md-3 mb-2">
+                <select class = "form-select" id = "colsortby" onchange="reloadCollection()">
+                    <option selected value = "A-Z">A-Z</option>
+                    <option value = "Z-A">Z-A</option>
+                </select>
+            </div>
+            <div class = "col-md-9">
+                <form class="d-flex" role="search" onsubmit="return false;">
+                    <input id = "colsearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onsearch='reloadCollection()'/>
+                    <button class="btn" type="button" id = "colsearchbtn" onclick='reloadCollection()'>Search</button>
+                </form>        
+            </div>
+        </div>
+        <div>
+                <div class="form-check form-check-inline m-1 me-0 mt-2">
+                <input class="form-check-input" type="checkbox" value="" id="checkphysical" onchange = "reloadCollection()" checked>
+                <label class="form-check-label text-white" for="checkChecked">
+                    Physical
+                </label>
+            </div>
+            <div class="form-check form-check-inline m-1 me-0 mt-2">
+                <input class="form-check-input" type="checkbox" value="" id="checkdigital" onchange = "reloadCollection()" checked>
+                <label class="form-check-label text-white" for="checkChecked">
+                    Digital
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class = "mb-1 p-1 text-center">
+        <div class = "p-2 pb-0 ft-border ms-5 me-5 mb-3" id = "countborder">
+            <h5 class = "text-white" id = "totalcount"></h5>
+        </div>
+        <table class = "table p-3 align-middle">
+            <thead>
+                <th scope = "col">Game</th>
+                <th scope = "col">Console</th>
+                <th scope = "col">Digital</th>
+            </thead>
+            <tbody id = "colbody">
+            </tbody>
+        </table>
+        <div id = "loader" class = "visually-hidden">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function collectionTableElement(game, console, digital)
+        {
+            let digitalcheck = "&#10003";
+
+            if (digital === "FALSE")
+            {
+                digitalcheck = "&#10005";
+            }
+
+            document.getElementById("colbody").innerHTML +=(`
+            <tr class = "bg-objects p-3">
+                <td>${game}</td>
+                <td>${console}</td>
+                <td style = "color: #fabaf1;">${digitalcheck}</td>
+            </tr>
+            `)
+        }
+
+        function resetCollection()
+        {
+            document.getElementById("colbody").innerHTML = "";
+        }
+
+        async function reloadCollection()
+        {
+            let totalcount = 0;
+            let isPhysical = document.getElementById("checkphysical").checked;
+            let isDigital = document.getElementById("checkdigital").checked;
+
+            document.getElementById("loader").classList.remove("visually-hidden");
+            document.getElementById("totalcount").textContent = "";
+            document.getElementById("countborder").classList.remove("ft-border");
+
+            searchkey = document.getElementById("colsearch").value.toUpperCase();
+            consolekey = document.getElementById("colselect").value;
+            sortby = document.getElementById("colsortby").value;
+
+            resetCollection();
+            await fetch("data/funkirbo's Spreadsheet - Collection - Games.csv")
+            .then(res => res.blob())
+            .then(blob => {
+                //console.log(blob);
+                const csvfile = new File([blob], "text/csv", { type: blob.type });
+                //console.log(csvfile);
+                Papa.parse(csvfile,
+                    {
+                        header: true,
+                        complete: function(results) {
+                            // console.log(results.data);
+                            switch(sortby)
+                            {
+                                case "A-Z":
+                                    results.data.sort((a,b) => a.Game.localeCompare(b.Game));
+                                    break;
+                                case "Z-A":
+                                    results.data.sort((a,b) => b.Game.localeCompare(a.Game));
+                                    break;
+                                default:
+                                    results.data.sort((a,b) => a.Game.localeCompare(b.Game));
+                                    break;
+                            }
+                            results.data.forEach(game => {
+                                if (game.Game.toUpperCase().includes(searchkey) && (game.Console === consolekey || consolekey === ""))
+                                {
+                                    if((game["Digital?"] === "FALSE" && isPhysical) || (game["Digital?"] === "TRUE" && isDigital))
+                                    {
+                                        collectionTableElement(game.Game, game.Console, game["Digital?"]);
+                                        totalcount += 1;
+                                    }
+                                }
+                                document.getElementById("totalcount").textContent = "Games: " + totalcount;
+                            });
+                        },
+                        error: function(error) {
+                            console.error(error.message);
+                        }
+                    }
+                );
+            })
+            document.getElementById("loader").classList.add("visually-hidden");
+            document.getElementById("countborder").classList.add("ft-border");
+        }
+
+        reloadCollection();
+        window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            // Reloads the entire window from scratch
+            window.location.reload(); 
+        }
+        });
+    </script>
+    </script>
+</body>
+<script>
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+
+</html>

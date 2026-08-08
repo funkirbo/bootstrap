@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "kingdom hearts";
+    let description = `a perfect time capsule of a childhood disney fan.`;
+    let date = "2025-05-02";
+
+    // no need to re-enter anywhere
+    let notes = "final mix"
+    let image = "images/kingdom hearts.webp";
+    let score = 8;
+    let developer = "Square Enix";
+    let publisher = "Square Enix";
+    let year = 2013;
+    let console = "ps3";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2743050/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/kingdom-hearts-final-mix--1";
+
+    // gap for spacing
+    let content = `
+                <p>a fantastic game, hindered by a lack of polish.</p>
+                <p>i&#39;ll start with my quick critiques:</p>
+                <ul>
+                <li>the movement kinda sucks. jumping especially feels like shit</li>
+                <li>the worlds can be very, very confusing at moments, especially hollow bastion</li>
+                <li>gummi ship kinda sucks lol</li>
+                <li>fighting behemoth 4 fucking times</li>
+                </ul>
+                <p>that&#39;s really it, and all of those (outside behemoth, fuck that boss) are easily fixable in a game moving forward. despite it&#39;s corniness, the story was really nice and hit pretty hard when it needed to. i like the light vs. darkness theming, and while it sometimes felt like 8 year olds larping, the campiness helped it feel more fun than annoying.</p>
+                <p>exploring through these different disney worlds, playing through a reimagined story, is fun every time! the characters feel accurate to the movies (of what i&#39;ve seen), and watching sora, a generally normal kid, interact with these characters was pretty silly.</p>
+                <p>i also really liked the combat, as well as the majority of the bosses! fighting with the keyblade feels punchy and impactful, and the magic system is quite well fleshed out! there&#39;s a lot of different types, and watching the upgrades come along over the course of the game is quite satisfying.</p>
+                <p>it&#39;s not something i absolutely adore, but kh1 is a really solid experience! i&#39;m intrigued on what the rest of the series has to offer, and that&#39;s the best thing a first game can do :)</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">kingdom hearts</title>
+    <meta name='description' id="description" content="a perfect time capsule of a childhood disney fan.">
+    <meta name='date' id="date" content = "2025-05-02">
+    <meta name='keywords' content='review, jrpg, beatemup'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

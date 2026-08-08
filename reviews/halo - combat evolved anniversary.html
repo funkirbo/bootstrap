@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "halo: combat evolved anniversary";
+    let description = `to be truly grand, you must have enough substance to back up the style. halo does not.`;
+    let date = "2025-05-07";
+
+    // no need to re-enter anywhere
+    let notes = "master chief collection"
+    let image = "images/halo - combat evolved anniversary.webp";
+    let score = 6;
+    let developer = "343 Industries";
+    let publisher = "Microsoft";
+    let year = 2011;
+    let console = "xbox one";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2765847/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/halo-combat-evolved-anniversary";
+
+    // gap for spacing
+    let content = `
+                <p>there&#39;s moments throughout halo that left me speechless. beautiful landscapes and really neat structures are scattered throughout, and they&#39;re a really nice treat. the music and general sound design is fantastic, and the camera angles used for the large panning shots of each level are fluid and excellently done.</p>
+                <p>then i start playing the game, and it&#39;s... fine. even the more fun levels feel a little boring, as much of each level is just fighting enemies, then running for a bit.</p>
+                <p>it&#39;s especially noticeable in assault on the control room and the library, but it&#39;s a consistent pattern through the rest of the game. levels are defined by their big moments and interesting cutscenes, but a lot of the time, it feels like you&#39;re just walking between those big moments. mid-level gameplay set-pieces are few and far between.</p>
+                <p>it&#39;s a landmark shooter, for sure, and i&#39;m sure those big moments were worth the wait back in &#39;01. playing it in the big 25, though, is a little disappointing. </p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">halo: combat evolved anniversary</title>
+    <meta name='description' id="description" content="to be truly grand, you must have enough substance to back up the style. halo does not.">
+    <meta name='date' id="date" content = "2025-05-07">
+    <meta name='keywords' content='review, fps, shooter'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "the great ace attorney: adventures";
+    let description = `the only ace attorney game to feel fundamentally incomplete.`;
+    let date = "2025-06-05";
+
+    // no need to re-enter anywhere
+    let notes = "chronicles port"
+    let image = "images/the great ace attorney - adventures.webp";
+    let score = 6;
+    let developer = "Capcom";
+    let publisher = "Capcom";
+    let year = 2015;
+    let console = "switch";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2911961/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/the-great-ace-attorney-adventures--1";
+
+    // gap for spacing
+    let content = `
+                <p>one of the really cool things about every ace attorney game is that the mystery feels complete by the end of it. are there some underlying details that aren&#39;t always solved? sure, especially in the first trilogy. but, by the end of the game, it always felt like a complete and solved set of cases.</p>
+                <p>the great ace attorney: adventures is the first i&#39;ve played where that isn&#39;t necessarily the case. there is a final mystery to solve that wraps up <em>some</em> of the game&#39;s major plot points, but there are still multiple that remain unsolved. it&#39;s the first game to end the after-final-case-but-before-the-credits sequence with a major question. the game feels incomplete, like it&#39;s setting up for a sequel more than trying to feel complete on its own.</p>
+                <p>and that&#39;s fine! plenty of games do that, but it feels especially off-putting in an ace attorney game, because the mystery feels incomplete. the game&#39;s themes of police corruption, antiquated practices and class struggle have just started moving in the right direction. it&#39;s clear that the end of the game is less an end and more a middle point for a sequel to jump off of.</p>
+                <p>and that philosphy leaves this game as a whole in a weird spot. the cases feel extremely basic, with trials only lasting at most one day. the pacing feels extremely off, because all your investigating for the entire trial happens over one day. the trials end up either extremely simple or extremely long.</p>
+                <p>i think the easiest way to describe my feelings is... unsatisfied. i really like the new mechanics, whether it be sholmes&#39;s <em>Logic and Reasoning Spectacular!</em> or the summation examinations. the third case is a really cool look into how easily evidence can be tampered with in this era, and the outcome has a great effect on naruhodo for the rest of the game. but the final case leaves much to be desired, the first case drags, the fourth case is just rather boring, and kazuma&#39;s character development as a whole leaves MUCH to be desired. </p>
+                <p>to me, the great ace attorney: adventures gets a lot right. the case logic makes sense, the small character interactions are great, the supporting cast is fantastic, it&#39;s one of the best looking ace attorney games (especially with sholmes&#39;s INCREDIBLE falling animation), and the themes are really interesting. but i leave the game feeling like something is missing. it sets up the second game really nicely, but fails to feel complete on its own.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">the great ace attorney: adventures</title>
+    <meta name='description' id="description" content="the only ace attorney game to feel fundamentally incomplete.">
+    <meta name='date' id="date" content = "2025-06-05">
+    <meta name='keywords' content='review, visualnovel, mystery'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

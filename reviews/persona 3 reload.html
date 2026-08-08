@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "persona 3 reload";
+    let description = `you never really move on from those you've lost.`;
+    let date = "2025-05-27";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/persona 3 reload.webp";
+    let score = 9;
+    let developer = "Atlus";
+    let publisher = "Sega";
+    let year = 2024;
+    let console = "xbox one";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2876545/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/persona-3-reload";
+
+    // gap for spacing
+    let content = `
+                <p>persona 3 reload is about life and death. everyone under the sun has written a story playing around those themes, so it&#39;s hard to stand out when that theme is your game&#39;s one real focus.</p>
+                <p>persona 3, though, spends much of its runtime talking less about death in specific and more about those who&#39;re left behind. how one grieves, how to take someone&#39;s death in stride, how to live your life to the fullest while you still can.</p>
+                <p>every social link is spent focusing on that one, central theme. yuko finds what she wants to do in her life, yukari rekindles with her mother years after her father&#39;s death, mitsuru carves her own path away from the one destined for her. each link gives you another opportunity to see a new facet of how these characters strive to improve their life and live it to the fullest.</p>
+                <p>the villains aren&#39;t trying to take over the world for selfish reasons, they&#39;re trying to rid the world of any will to live because their own has been ripped away from them. each character in your ragtag group has lost someone, lost a mother or a father or a friend, and they come together and help each other find their own purpose.</p>
+                <p>persona 3 is fantastic. it has its problems (mostly in its gameplay, tartarus specifically), but it executes a story that makes &quot;the power of friendship&quot; feel like a legitimate plot theme. its characters face death head on, and though they may be scared of their foe, they try their hardest to push forward. it&#39;s a really well executed, well paced narrative that creates a unique plot out of rather overdone themes.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">persona 3 reload</title>
+    <meta name='description' id="description" content="you never really move on from those you've lost.">
+    <meta name='date' id="date" content = "2025-05-27">
+    <meta name='keywords' content='review, rpg, jrpg, turnbased, visualnovel'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

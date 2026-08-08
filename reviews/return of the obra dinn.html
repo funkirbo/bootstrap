@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "return of the obra dinn";
+    let description = `a truly, genuinely one-of-a-kind video game.`;
+    let date = "2025-06-29";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/return of the obra dinn.webp";
+    let score = 9;
+    let developer = "Lucas Pope";
+    let publisher = "3909";
+    let year = 2018;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3018102/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/return-of-the-obra-dinn";
+
+    // gap for spacing
+    let content = `
+                <p>rewinding the clock to someone&#39;s death seems simple: find how they died, and move on. </p>
+                <p>but that&#39;s not how <em>real life</em> works: death isn&#39;t the only thing happening on the ship while it chugs along. you have to focus on the death, but also the other interactions around the ship at the same time. who&#39;s bringing food for another person? who&#39;s hanging out together, and where are they? what role is someone performing when everything goes awry?</p>
+                <p>obra dinn forces you to figure out everything. every face has a name, and every name has either died or disappeared. it hands you the ability to rewind, but nothing else. you get a reference book of names, and a magic clock. it&#39;s a game of connecting the dots and hunting for more information.</p>
+                <p>that information gets confirmed <em>just</em> often enough as well. 3 fates is the perfect number for revealing new information; not too many to feel overwhelming, but not too few where you can just guess and check your way through the entire game.</p>
+                <p>i think that&#39;s what makes obra dinn so cool to analyze: it&#39;s a game that balances information in a really cool way. about halfway through my experience, i had all of the information i could get; from there, it just came down to noticing small details in specific deaths, finding certain people and who they talk to the most. it&#39;s tricky, but the game ensures searching for the information it wants you to glean is manageable. </p>
+                <p>i do think there are certain people that are a little too tricky to track down, though. there are times when someone only appears in a couple of memories, and you&#39;re not quite given enough info, at least to me, to put a name to a face. to be fully transparent, i did have to take a peek at a walkthrough from time to time, just to get a nudge in the right direction.</p>
+                <p>regardless of my personal struggles with some of the logic, the game is absolutely impeccable. it&#39;s a medium-defining game, one that truly feels one-of-a-kind. it&#39;s such a unique use of gaming to tell an enthralling story; it&#39;s a truly singular experience i&#39;d recommend to anyone.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">return of the obra dinn</title>
+    <meta name='description' id="description" content="a truly, genuinely one-of-a-kind video game.">
+    <meta name='date' id="date" content = "2025-06-29">
+    <meta name='keywords' content='review, puzzle, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

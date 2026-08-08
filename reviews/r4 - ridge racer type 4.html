@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "r4: ridge racer type 4";
+    let description = `the style IS the substance.`;
+    let date = "2026-05-07";
+
+    // no need to re-enter anywhere
+    let notes = "psone classic"
+    let image = "images/r4 - ridge racer type 4.webp";
+    let score = 9;
+    let developer = "Namco";
+    let publisher = "Namco";
+    let year = 1998;
+    let console = "ps3";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/4570427/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/r4-ridge-racer-type-4--1";
+
+    // gap for spacing
+    let content = `
+                <p>i think people use &quot;style over substance&quot; as an insult sometimes. there are games where that insult is justified - i played <em>date everything</em> recently and found that game to be dreadful outside of its cute art style - but i&#39;m also of the mind that the term is thrown around too loosely. style can be substantial in its own way, and a game can be incredible based on its aesthetics as long as the gameplay or narrative doesn&#39;t drag it down.</p>
+                <p><em>ridge racer type 4</em> is the perfect example of that last example in my mind. it&#39;s not an insane game mechanically; racing around each track is good fun, said tracks are designed pretty well, and there&#39;s a variety of different vehicle styles for you to tinker around with. it&#39;s a fun game, regardless of its aesthetics, even if that on its own isn&#39;t going to blow anybody away. at the end of the day, you could scrap everything that makes <em>ridge racer type 4</em> stand out aesthetically, and it would still be a rock-solid racing game.</p>
+                <p>but nobody in their right mind is playing <em>r4</em> for the racing. let&#39;s be real here: even in 1998, there were more ambitious, still fun racing games out on the market. <em>f-zero x</em> and <em>need for speed III</em> were  released earlier in the same year, both of which were completely fresh takes on the genre, and <em>daytona 2</em> was probably at your local arcade if you wanted something more traditional.</p>
+                <p>no, <em>r4</em> is more of a time capsule than a game. the color-blocked UI, ugly-ass prerendered FMVs and kick-ass acid jazz/dnb music is what makes this game stand out. it&#39;s so aggressively late-90s, a time where video games were just starting to come into their own visually, when everyone wanted to hop on the train of the NEW INSANE 3D GRAPHICS AT HOME, when electronic music was hitting it big in the mainstream, when more &quot;urban&quot; stylings were starting to become more popular. it&#39;s a game so distinctly rooted in its time period, because every element of the game&#39;s aesthetics represents the exact trends popping up during its development.</p>
+                <p>it doesn&#39;t use those trends as a crutch, though. there&#39;s genuine thought put into how each element works off each other. tracks in the menus are far less dense than the ones played while racing, which lets the soundtrack&#39;s most impactful music shine. any human photos you see outside of the FMVs are stylized in the same way as the UI, folding and fluttering in and out, while still being distinct due to their monochrome color palettes. the style doesn&#39;t feel slapdash or half-baked, it&#39;s engrained into what makes <em>ridge racer type 4</em> what it is.</p>
+                <p>it would be criminal to talk about <em>r4</em> without mentioning how excellent the music is; legitimately, it is one of the few game OSTs i listen to on its own with no shame. <em>quiet curves</em> has this beautiful piano combined with its breakbeat rhythms, <em>pearl blue soul</em> builds into a jazzy house banger, <em>naked glow</em> is built on this wavy guitar lick before the saxophone comes in like a hammer, and <em>move me</em> is this layered, beautiful DnB banger that just pulls you into a trance while listening. </p>
+                <p>the thing is, though, i look back on this game, its style, its music, all multiple decades past its time. i wasn&#39;t born until almost a decade after this game came out, and i wasn&#39;t exactly in the high-seat asking to listen to <em>burnin&#39; rubber</em>. &quot;retro&quot; games and aesthetics are easier to judge 20 years down the line because hindsight is 20/20. if i were a reviewer in the 90s, all of what makes <em>r4</em> so special may have seemed relatively pedestrian. by the 2000s, it may have felt dated in a bad way. i can&#39;t comfortably say that i would&#39;ve seen <em>ridge racer type 4</em> in the same light had i been 10 years older.</p>
+                <p>at the end of the day, though, who cares? art is art, time is always going to pass, and judging stuff in the context of its release is both important... and not the whole picture. things age, sometimes for the better and sometimes for the worse. <em>ridge racer type 4</em> is dated, but that age only adds to the mystique, in a sense. it&#39;s a game that becomes less and less realistic as time passes, one that will continue to live on as a time capsule of a time further and further away.</p>
+                <p>but does any of that really matter right now? let&#39;s live in the moment. right now, in this moment, on the seventh of may, twenty-twenty-six, as i write this review, <em>r4: ridge racer type 4</em> kicks major ass, and that&#39;s all that matters.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">r4: ridge racer type 4</title>
+    <meta name='description' id="description" content="the style IS the substance.">
+    <meta name='date' id="date" content = "2026-05-07">
+    <meta name='keywords' content='review, sports, racing'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

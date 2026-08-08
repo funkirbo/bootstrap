@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "kaze and the wild masks";
+    let description = `have you ever played donkey kong country? if yes, do you want more?`;
+    let date = "2024-04-09";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/kaze and the wild masks.webp";
+    let score = 7;
+    let developer = "Vox Game Studio";
+    let publisher = "SOEDESCO";
+    let year = 2021;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/1523414/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/kaze-and-the-wild-masks";
+
+    // gap for spacing
+    let content = `
+                <p>kaze and the wild masks wears its inspiration on its sleeve; scratch that, it tattooed its inspiration across its face. kaze is basically a poor man&#39;s donkey kong country game. that&#39;s not necessarily a bad thing, though.</p>
+                <p>the level design is quite good throughout the game, the bosses feel climactic, there&#39;s plenty of stuff to collect, and the game feels pretty polished. plenty of bonus content and hidden collectibles make each level fun to explore again, and the different forms (essentially this game&#39;s version of the animal companions) add great flexibility in how levels can be designed. also, weird compliment - the UI is like... really good. like surprisingly REALLY good.</p>
+                <p>the story doesn&#39;t make much sense, and i think the art and music are both just alright, but those complaints don&#39;t detract too much from a totally solid 2D platformer. it&#39;s nothing that&#39;ll shock you, but if you find it on sale, i&#39;d pick it up. it&#39;s worth your time if this kind of 2D platformer is your thing.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">kaze and the wild masks</title>
+    <meta name='description' id="description" content="have you ever played donkey kong country? if yes, do you want more?">
+    <meta name='date' id="date" content = "2024-04-09">
+    <meta name='keywords' content='review, 2dplatformer, platformer, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

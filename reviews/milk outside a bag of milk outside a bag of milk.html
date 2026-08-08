@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "milk outside a bag of milk outside a bag of milk";
+    let description = `the developers gamified watching someone drink themselves to death.`;
+    let date = "2025-06-17";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/milk outside a bag of milk outside a bag of milk.webp";
+    let score = 8;
+    let developer = "Nikita Kryukov";
+    let publisher = "Nikita Kryukov";
+    let year = 2021;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3100108/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/milk-outside-a-bag-of-milk-outside-a-bag-of-milk";
+
+    // gap for spacing
+    let content = `
+                <p>the first milk game, to me, was a little too blunt in its messaging for its themes to hit as hard as i would like. this game corrects that flaw stunningly.</p>
+                <p>our main character&#39;s plight, dealing with a litany of mental disorders, self-esteem issues, and general agony, is now put on display in a way completely different than her trip to the convenience store. we get to explore her home life, a complete mess that she calls home. exploring her life experiences through her room is a fever dream, stories of online friends who abandoned her, schools that she&#39;s been dragged out of, sketchbooks she rarely draws in.</p>
+                <p>all these traits show a deeply troubled young woman, one whose mental struggles force her to push her past behind her. she&#39;s scared: scared to move on, scared to stay in the present, and scared to ruminate in her past. she&#39;s scared of every option, so she stays frozen in the present, stuck in a room she refuses to change.</p>
+                <p>in the meantime, she talks to you, some sort of in-between of a person and her inner psyche. you can encourage her activity, or belittle her further, and it makes little difference. she&#39;s no happier, as she refuses to make any changes herself. her mind is trapped in an endless cycle of torment, and nothing you can do will change that.</p>
+                <p>the entire game is like this. whether you&#39;re out on the balcony of her spiraling apartment complex, or wrapped up in front of her mirror, you make no headway. the most you&#39;ll get is a new story from her, maybe another tidbit into the life she used to live. but that&#39;s long behind her.</p>
+                <p>the game is about trying to make her a little happier. or, at least, that&#39;s what&#39;s on the tin. in reality, you&#39;re really just an observer. sure, you interact, but at the end of the day, her actions are much the same every time. she may die, but she&#39;ll always be back. she may fall asleep, but she&#39;ll always wake. she may explore her past, but she&#39;ll never reflect on it. both you and her are stuck in this tango; you&#39;re trying to help, her mind is stopping her from doing anything with said help.</p>
+                <p>so you watch. you watch, as she pushes you away, preferring the silence she&#39;s used to. she stops taking her meds. you&#39;ll be gone tomorrow.</p>
+                <p>you keep watching. watching her dreams, as she delves further into the abyss.</p>
+                <p>you keep watching, as she wakes up, crying her eyes out.</p>
+                <p>and the game ends there. you failed. she&#39;s no happier than the start. why did you even bother?</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">milk outside a bag of milk outside a bag of milk</title>
+    <meta name='description' id="description" content="the developers gamified watching someone drink themselves to death.">
+    <meta name='date' id="date" content = "2025-06-17">
+    <meta name='keywords' content='review, visualnovel, horror, psychhorror, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

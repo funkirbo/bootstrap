@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "forgive me father";
+    let description = `some great ideas, obfuscated by poor execution.`;
+    let date = "2025-04-20";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/forgive me father.webp";
+    let score = 6;
+    let developer = "Byte Barrel";
+    let publisher = "Fulgrum Publishing";
+    let year = 2021;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2684967/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/forgive-me-father";
+
+    // gap for spacing
+    let content = `
+                <p>forgive me father is really cool at a surface level. a lovecraftian shooter with a beautiful art style, filled with various upgradeable weapons and abilities? sign me up!</p>
+                <p>and then you boot up the game, and... it&#39;s disappointing.</p>
+                <p>all of those really cool ideas are still there, but there&#39;s a distinct lack of polish in every single aspect. the cutscenes are basically slideshows with a slightly off sounding voice actor telling a boring story. the ability and weapon tree is cool, but you get a majority of the upgrades early on, and the balancing and progression is really thrown off.</p>
+                <p>they&#39;re still fun features, for sure! i&#39;m not saying they&#39;re bad, but it feels like the developers either didn&#39;t have the budget or didn&#39;t have the knowledge to make some of the more complex systems work out.</p>
+                <p>my largest true complaint is the level design; there are lots of tight corridors, sharp corners and hidden enemies. for this type of shooter (the doom 2016 likes), that kind of style just doesn&#39;t work; even the tightest of hallways in doom still had room to get around, no matter what.</p>
+                <p>look. don&#39;t get me wrong. forgive me father is a totally solid shooter at its core, that feels great to control and has lots of variety in its runtime. but, at some point, i&#39;d rather a game be simpler if it could spend more time on making what it has more polished; i mean, look at dusk. it&#39;s not a complicated game, but everything it does is polished to a T.</p>
+                <p>there is an excellent game hidden in here somewhere. it just needed some more polishing.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">forgive me father</title>
+    <meta name='description' id="description" content="some great ideas, obfuscated by poor execution.">
+    <meta name='date' id="date" content = "2025-04-20">
+    <meta name='keywords' content='review, fps, shooter, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

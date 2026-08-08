@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "frog detective 3: corruption at cowboy county";
+    let description = `frog detective at its most ambitious... which isn't saying much, but it is better.`;
+    let date = "2025-06-14";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/frog detective 3 - corruption at cowboy county.webp";
+    let score = 8;
+    let developer = "worm club";
+    let publisher = "SUPERHOT PRESENTS";
+    let year = 2022;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2951274/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/frog-detective-3-corruption-at-cowboy-county";
+
+    // gap for spacing
+    let content = `
+                <p>if it ain’t broke, don’t fix it; just add a scooter.</p>
+                <p>yup, frog detective 3, at its core, is just another frog detective game. this time, though, you’ve got a scooter, and it’s absolutely amazing. the scooter allows you to explore the larger map that is cowboy county, and the newfound exploration adds another layer to an extremely simple frog detective formula.</p>
+                <p>outside of that, frog detective 3 is also the longest game, with the most fun story in my eyes. whether you’re talking with a group of really friendly bandits or convincing cowboy county that crime isn’t real, the dry humor that makes frog detective stand out returns tenfold. the more old-timey areas are really fun, and the character’s eccentricities contrast really nicely to the white bread that is frog detective himself.</p>
+                <p>it’s the best the frog detective series has to offer, for sure. the scooter is a blast, the humor is still on point, and the story is filled with some more fun twists and turns than usual. it’s a good time!</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">frog detective 3: corruption at cowboy county</title>
+    <meta name='description' id="description" content="frog detective at its most ambitious... which isn't saying much, but it is better.">
+    <meta name='date' id="date" content = "2025-06-14">
+    <meta name='keywords' content='review, visualnovel, mystery, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

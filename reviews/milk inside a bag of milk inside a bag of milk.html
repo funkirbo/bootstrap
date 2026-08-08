@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "milk inside a bag of milk inside a bag of milk";
+    let description = `it's a little too direct to be unnerving.`;
+    let date = "2025-03-30";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/milk inside a bag of milk inside a bag of milk.webp";
+    let score = 5;
+    let developer = "Nikita Kryukov";
+    let publisher = "Nikita Kryukov";
+    let year = 2020;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/2603297/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/milk-inside-a-bag-of-milk-inside-a-bag-of-milk";
+
+    // gap for spacing
+    let content = `
+                <p>i&#39;m a big fan of games that tackle serious topics like anxiety and PTSD, and this short little VN does just that... almost <em>too</em> well.</p>
+                <p>i really like the atmosphere, the all-red visuals and disjointed, noisy background sounds pair nicely with the topic at hand. it&#39;s messy, but in a specific, purposeful way.</p>
+                <p>my problem arises with this game just being... a little <em>too</em> on the nose, y&#39;know? like, this kind of atmospheric storytelling works much better when there are more questions than answers. i was more of a fan of the first half, because i really <em>didn&#39;t</em> get those answers. as soon as you sit down and are explained &quot;here&#39;s exactly what happened. here is what&#39;s wrong with me, when it started, and what i&#39;m doing now&quot;, a lot of the intrigue and surprise that this story could bring is lost.</p>
+                <p>i still understand the character and their struggles, but a lot of the punch that i want out of this type of game is lacking after that point.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">milk inside a bag of milk inside a bag of milk</title>
+    <meta name='description' id="description" content="it's a little too direct to be unnerving.">
+    <meta name='date' id="date" content = "2025-03-30">
+    <meta name='keywords' content='review, visualnovel, horror, psychhorror, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "celeste";
+    let description = `celeste manages to be top of its class in pretty much every aspect.`;
+    let date = "2026-03-13";
+
+    // no need to re-enter anywhere
+    let image = "images/celeste.webp";
+    let score = 10;
+    let developer = "Extremely OK Games";
+    let publisher = "Maddy Makes Games";
+    let year = 2018;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/4310477/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/celeste";
+
+    // gap for spacing
+    let content = `
+                <p><em>celeste</em> is pretty simple. i like <em>celeste</em> for simple reasons. it&#39;s really well designed, controls great, feels difficult yet extremely fair, looks and sounds fantastic, and the game&#39;s narrative excellently ties everything together. cool.</p>
+                <p>the problem is, if i just say that, i think it underplays just how good each of those elements are. this isn&#39;t a game where everything is great, it&#39;s a game where everything is so well-tuned that it almost feels unfair. <em>celeste</em> is the type of game i make in my dreams when i want to start designing something. it&#39;s a treat.</p>
+                <p>each and every stage is designed absolutely swimmingly. each level has a new mechanic, and that mechanic is always slowly eased in throughout the first few stages. you&#39;re forced to understand the quirks of each new piece, before the game goes wild and creates something totally new based on what you&#39;ve been given. because the base moveset is so simple - just a dash, a jump, and the ability to climb - the stage design needs to take a step up in its complexity, and it absolutely does.</p>
+                <p>the game&#39;s aesthetics are also outstanding. lena raine kicks ass on the soundtrack, creating these serene, dreamy, sometimes-tense electronic pieces that perfectly fit the game&#39;s beautiful colors and detailed backgrounds. there&#39;s a level of detail in the art that, while not unmatched by other games with a pixel-art style, puts itself up there with the best.</p>
+                <p>to me, though, where <em>celeste</em> truly stands out is in its narrative. it is, to me, one of the very few games that doesn&#39;t really over-dramatize living with depression. a lot of games that talk about the mental issues that come with having depression focus all on this feeling of sadness, or emptiness. and i don&#39;t mean to discredit those games, because there is a lot of truth to that; i just don&#39;t often see the other side of the coin.</p>
+                <p>madeline&#39;s life is not the saddest thing in the world. she&#39;s lonely, sure, but it&#39;s less that she&#39;s always down, and more that whenever she&#39;s up, she falls back more easily. there&#39;s a clawing sense of paranoia to every action she takes, she blames herself for any faults, and any lack of progress is way harder on her psyche than it should be. her goal is not to climb the mountain for any tangible reason, she just wants to do it so that she can prove to herself that she can.</p>
+                <p>it&#39;s the kind of depression that tends to plague people silently, and despite the feeling of sadness being less prevalent, that overwhelming sense of paranoia is just as dreadful.</p>
+                <p>her climb over the mountain is not a pretty one; she has multiple anxiety attacks, almost loses a friend, and loses a good chunk of her progress when she&#39;s nearly at the top. it&#39;s disheartening, but she has nowhere to go but forward. so she keeps going.</p>
+                <p>reaching the top is not a dramatic process. she climbs up the final steps, reaches that last little barrier, and just... sits there. and enjoys it. and she climbs right back down, feeling fulfilled, moving on with some renewed sense of belief.</p>
+                <p>it feels good.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">celeste</title>
+    <meta name='description' id="description" content='celeste manages to be top of its class in pretty much every aspect.'>
+    <meta name='date' id="date" content = "2026-03-13">
+    <meta name='keywords' content='review, 2dplatformer, platformer, indie'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "sonic advance";
+    let description = `one of Dimps's more unforgivable failures in level design.`;
+    let date = "2025-09-27";
+
+    // no need to re-enter anywhere
+    let notes = ""
+    let image = "images/sonic advance.webp";
+    let score = 4;
+    let developer = "Dimps";
+    let publisher = "Sega";
+    let year = 2001;
+    let console = "gba";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/3414227/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/sonic-advance";
+
+    // gap for spacing
+    let content = `
+                <p>every time i play a Dimps sonic game, the same exact pattern happens. i&#39;ll lead you through step by step.</p>
+                <p><em>step 1:</em> i have a great time in the early stages! fun, simple level design leads to extremely exciting, fast-paced sonic gameplay that rivals some of the best the series has to offer.</p>
+                <p><em>step 2:</em> <strong>the level</strong> hits. the one act that just has atrocious level design, one with an absurd amount of bottomless pits, catastrophic pathing, and downright atrocious enemy placement.</p>
+                <p><em>step 3:</em> the chain of bad level design begins, and after <strong>the level</strong>, everything goes downhill, and the rest of the game becomes a garble of awful stages that just aren&#39;t fun.</p>
+                <p>i just don&#39;t find the Dimps style of level fun. they&#39;re big on mazy, linear designs that aren&#39;t all that fun to run through, at least in my eyes. a lot of the moment-to-moment gameplay isn&#39;t fast, you&#39;re just running around back and forth, with the occasional burst of speed to get to a new area. it feels much more lethargic than sonic gameplay should.</p>
+                <p>it sounds like i&#39;m hating on this game, and i&#39;m not. i see the vision with Dimps, and like i said earlier, the early game is extremely fun. it just drops off a cliff as soon as the level design becomes too... high-concept, i guess. when it tries to go for anything too special, it tends to fall flat. that, alongside an extremely... meh ending, leads to a game that just doesn&#39;t hit the mark, in my eyes.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">sonic advance</title>
+    <meta name='description' id="description" content="one of Dimps's more unforgivable failures in level design.">
+    <meta name='date' id="date" content = "2025-09-27">
+    <meta name='keywords' content='review, 2dplatformer, platformer'>
+    
+    <meta charset="UTF-8">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            notes,
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>
