@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "bubsy 4d";
+    let description = "fun for a moment, yet lacking in memorable content.";
+    let date = "2026-08-12";
+
+    // no need to re-enter anywhere
+    let image = "images/bubsy 4d.webp";
+    let score = 6;
+    let developer = "Fabraz";
+    let publisher = "Atari";
+    let year = 2026;
+    let console = "switch 2";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/5098317/";
+    let ib = "https://beta.infinitebacklog.net/users/funkirbo/reviews/bubsy-4d";
+
+    // gap for spacing
+    let content = `
+                <p><em>bubsy</em> is a series that probably deserved to die. it&#39;s a relic of the 90s, when everybody wanted their own piece of the <em>sonic</em> pie, and the games before <em>bubsy 4d</em> are all regarded as painfully... ass. apparently the higher-ups at the company now called Atari saw something in the cat, though, &#39;cause they greenlit a new game, developed by indie 3d platforming savants Fabraz. <em>bubsy</em> does have a reputation, and any kind of attention is good attention, right? might as well throw some money at a new game.</p>
+                <p><strong>WRONG.</strong> bad attention is not the same as good attention. it is much harder to get people to give a franchise as snake-bitten as <em>bubsy</em> a second shot when EVERYBODY in your target audience knows how bad the games prior were. even if the (relatively) small audience of chronically online nerds gives the game a shot, it&#39;s not like <em>bubsy</em> is a household name or anything, so the regular ol&#39; people aren&#39;t flocking towards it either. <em>4d</em> is an extremely weird game to fund, even if the budget was probably pretty reasonable, when the only selling point is &quot;what if <em>bubsy</em> was actually good?&quot;.</p>
+                <p>and... yeah, <em>bubsy 4d</em> is alright. it&#39;s a fun, movement-focused 3d platformer with solid level design and some fun humor. every area is basically a set of platforming challenges set in a variety of arts-and-crafts themed worlds, with a fun focus on keeping your momentum. there&#39;s plenty of little secrets and collectibles to get, and the customization in both your moveset and model are fun bonuses to change the feel of the game ever so slightly.</p>
+                <p>it&#39;s just that nothing here sticks out in my mind as anything other than &quot;a decent platformer&quot; because it&#39;s so, SO short. 2 and a half hours and you&#39;re through this game&#39;s fifteen levels. there&#39;s some fun bonus objectives and speedrun challenges, but it&#39;s nowhere near enough to feel substantial, especially when the level theming isn&#39;t all that memorable.</p>
+                <p>when i said these levels were &quot;basically&quot; just platforming challenges, i meant that they are... literally just platforms in the air most of the time. yeah, you&#39;ll get some quirky little obstacles - there&#39;s a level where you climb up a tall tower, and another where you reach the top of a big dam - but these notable set pieces and themes are few and far between.</p>
+                <p>all of the game&#39;s humor revolves around laughing at the concept of <em>bubsy</em>. the main cat himself is older and more lethargic, the supporting cast pokes fun at him all the time, and the fourth wall is broken constantly. it&#39;s charming at times, and extremely grating at others; yet, because the gameplay is so standard, it remains this game&#39;s defining element.</p>
+                <p>and i once again want to hammer in that the gameplay here is not bad, it&#39;s just not interesting enough to stand out. and i think that&#39;s sort of the point, right? put emphasis on the comedy, and then make a relatively safe platformer to solidify that, &quot;HEY, BUBSY IS A SERIOUS FRANCHISE WITH GOOD GAMES NOW.&quot; it&#39;s not super ambitious or new in any meaningful way, which isn&#39;t necessarily a bad thing. you just have to imagine that this is a first step into a new frontier for <em>bubsy</em>, because on its own, <em>4d</em> is not a world-beater.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">bubsy 4d</title>
+    <meta property = "og:title" content = "bubsy 4d">
+    
+    <meta name='description' id="description" content="fun for a moment, yet lacking in memorable content.">
+    <meta property = "og:description" content = "fun for a moment, yet lacking in memorable content.">
+
+    <meta name='date' id="date" content = "2026-08-12">
+    <meta name='keywords' content='review, 3dplatformer, platformer'>
+
+    <meta property = "og:url" content = "https://funkirbo.net/reviews/bubsy%204d.html">
+    <meta property = "og:image" content = "https://funkirbo.net/reviews/images/bubsy 4d.webp">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>
