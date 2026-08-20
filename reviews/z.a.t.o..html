@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // re-enter me for meta tags
+    let title = "z.a.t.o.: i love the world and everything in it";
+    let description = "there's beauty in being a cog in a larger machine.";
+    let date = "2026-08-20";
+
+    // no need to re-enter anywhere
+    let image = "images/z.a.t.o..webp";
+    let score = 10;
+    let developer = "Ferry // Nopananaman";
+    let publisher = "Ferry // Nopananaman";
+    let year = 2025;
+    let console = "pc";
+    let backloggd = "https://backloggd.com/u/funkirbo/review/5140146/";
+    let ib = "https://infinitebacklog.net/users/funkirbo/reviews/z-dot-a-t-dot-o-i-love-the-world-and-everything-in-it";
+
+    // gap for spacing
+    let content = `
+                <p>i try to think i have free will. it&#39;s comforting to, at least in some way, feel that my actions are my own, and not one that some higher power perfectly planned out. my actions, good and bad, are ones that i decided to make, not ones designed specifically to fit the needs of the world. when i make mistakes, they are my own. when i succeed, that success is my own.</p>
+                <p>though, if you think of the world as some sort of living, thinking, breathing organism, one containing all of us as its little cells, it would make sense if my job was predetermined. i do the job i need to do to keep the universe running, in some way or another. my joy is meaningful, my sorrows are meaningful, even if i&#39;m just doing the job destined for me. looking from a bird&#39;s eye view, it&#39;s beautiful, in some morbid way.</p>
+                <p>but it&#39;s never as clean as that. there&#39;s beauty in the concept of the world being some perfectly constructed puzzle, but the nitty-gritty is always brutal. the lion and the gazelle are not friends, and that&#39;s that. one eats the other. watching a predator feast on its prey is not a pretty sight; you do not seek that out in nature. it&#39;s gross, and unsettling, and gory. yet, when looking at &quot;the circle of life&quot; as a concept, you don&#39;t think about the small things, the individual moments. you don&#39;t think about the gazelle and its herd, or the lion and its pack. you just know that, in the end, it all works itself out. you zoom out enough until the circle of life is a perfect circle, and you don&#39;t see all the little deviations in the line.</p>
+                <p><em>z.a.t.o.</em> forces you to. it is a game about the predator and its prey, about a young woman who forces herself to see the beauty in the bigger picture, despite knowing that her life will stay tortured because of it. the world is beautiful, right? she has her place, and her bullies have theirs. it&#39;s nothing personal, they just have to keep the status quo. she will suffer to keep the balance of the universe intact. asya forces herself to love the world that she knows has placed her in a position to continually be tormented. if her life is predetermined, she will fight back through pure, overwhelming acceptance.</p>
+                <p>most people would look at the world with anger if they thought their life was set to be a living hell, yet she looks at it with admiration. she has a special role, to live as the victim until her next role comes into place. isn&#39;t that amazing? a useless little girl like her has a place in the world, how lovely.</p>
+                <p>she believes this; she has to. people will come and go. some will help her, then tell her to stand up for herself next time; others will barge into her life just to leave just as quickly. the world will give her blessings and then rip them away, yet asya has faith that it&#39;s doing this all on purpose. she enjoys the small moments, the relationships she knows are temporary. even if they&#39;re not going to last, at least she can make good memories. the world gives her a hand and she takes it, even if the hand will let her go eventually.</p>
+                <p>asya loves the world. she must. she loves the world, and she will let everybody else know that she does. her message will go through the skies, pierce the clouds, and reach the outside of the world. her love will be everlasting, even if she isn&#39;t.</p>
+                <p>even as the town she lives in drifts apart, as she breaks down, as her mind crumbles away to the void, her will remains just as strong. she loves the world, she loves her place in the world, she loves how it all turned out in the end. the message went through.</p>
+                <p>I LOVE YOU. I LOVE YOU. I LOVE YOU.</p>
+
+            `;
+</script>
+<head>
+    <!-- change me (for sure) -->
+	<title id = "title">z.a.t.o.: i love the world and everything in it</title>
+    <meta property = "og:title" content = "z.a.t.o.: i love the world and everything in it">
+    
+    <meta name='description' id="description" content="there's beauty in being a cog in a larger machine.">
+    <meta property = "og:description" content = "there's beauty in being a cog in a larger machine.">
+
+    <meta name='date' id="date" content = "2026-08-20">
+    <meta name='keywords' content='review, visualnovel, indie'>
+
+    <meta property = "og:url" content = "https://funkirbo.net/reviews/z%2Ea%2Et%2Eo%2E.html">
+    <meta property = "og:image" content = "https://funkirbo.net/reviews/images/z.a.t.o..webp">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='subject' content='gaming'>
+    <meta name="medium" content="blog">
+    <meta name="robots" content="index">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- change me if needed -->
+    <meta name='rating' content='General'>
+
+	<link href = "../style/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "../style/js/bootstrap.bundle.min.js"></script>
+    <link href = "../style/global.css" rel = "stylesheet">
+
+    <script src = "../style/js/customelements.js"></script>
+</head>
+
+<nav id = "navbar"></nav>
+<script>
+    let element = callNavOne(false, false, false, false, false);
+    document.getElementById("navbar").innerHTML = element;
+</script>
+
+<body id = "body"></body>
+<script>
+    generateReviewPage(
+            title,
+            "",
+            description,
+            date,
+            image,
+            score,
+            developer,
+            publisher,
+            year,
+            console,
+            backloggd,
+            ib,
+            content
+    );
+    callBody();
+</script>
+
+<footer id = "footer"></footer>
+<script>
+    document.getElementById("footer").innerHTML = callFooter();
+</script>
+</html>
