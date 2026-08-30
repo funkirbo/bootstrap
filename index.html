@@ -31,6 +31,7 @@
     <link href = "style/global.css" rel = "stylesheet">
 
     <script src = "style/js/customelements.js"></script>
+    <script src = "style/js/papaparse.min.js"></script>
 
     <script>
         let featuredTitle = "r4: ridge racer type 4";
@@ -38,17 +39,17 @@
         let featuredImage = "reviews/images/r4 - ridge racer type 4.webp";
         let featuredLink = "reviews/r4 - ridge racer type 4.html";
 
-        let rp3title = "420BLAZEIT 2: GAME OF THE YEAR";
-        let rp3date = "2026-07-15";
-        let rp3link = "reviews/420blaze it 2 - game of the year.html"
+        // let rp3title = "420BLAZEIT 2: GAME OF THE YEAR";
+        // let rp3date = "2026-07-15";
+        // let rp3link = "reviews/420blaze it 2 - game of the year.html"
         
-        let rp1title = "z.a.t.o.: i love the world and everything in it";
-        let rp1date = "2026-08-20";
-        let rp1link = "reviews/z.a.t.o..html"
+        // let rp1title = "z.a.t.o.: i love the world and everything in it";
+        // let rp1date = "2026-08-20";
+        // let rp1link = "reviews/z.a.t.o..html"
 
-        let rp2title = "bubsy 4d";
-        let rp2date = "2026-08-12";
-        let rp2link = "reviews/bubsy 4d.html";
+        // let rp2title = "bubsy 4d";
+        // let rp2date = "2026-08-12";
+        // let rp2link = "reviews/bubsy 4d.html";
     </script>
 </head>
 
@@ -208,10 +209,74 @@
     <script>
         callBody();
 
-        featuredPost(featuredLink, featuredTitle, featuredDesc, featuredImage);
-        recentPostOne(rp1link, rp1title, rp1date);
-        recentPostTwo(rp2link, rp2title, rp2date);
-        recentPostThree(rp3link, rp3title, rp3date);
+        async function recentPosts()
+        {
+            let rvcount = 0;
+            const rp = [];
+            response = await fetch("data/funkirbo's Spreadsheet - Finished - Games.csv")
+            .then(res => res.blob())
+            .then(blob => {
+                //console.log(blob);
+                const csvfile = new File([blob], "text/csv", { type: blob.type });
+                //console.log(csvfile);
+                Papa.parse(csvfile,
+                    {
+                        header: true,
+                        complete: function(results) {
+                            // console.log(results.data);
+                            let dateA = new Date(0);
+                            let dateB = new Date(0);
+                            const distantPast = new Date(0);
+                            results.data.sort((a,b) => {
+                                if (a["Date Reviewed"] !== "")
+                                {
+                                    dateA = new Date(a["Date Reviewed"]);
+                                }
+                                else {
+                                    dateA = distantPast;
+                                }
+
+                                if (b["Date Reviewed"] !== "")
+                                {
+                                    dateB = new Date(b["Date Reviewed"]);
+                                }
+                                else {
+                                    dateB = distantPast;
+                                }
+                                return dateB.getTime() - dateA.getTime();
+                            });
+                            //console.log(results.data);
+                            results.data.forEach(game => {
+                                if (game.Review !== "-" && game.Review !== "" && rvcount < 3)
+                                {
+                                    if(rvcount === 0)
+                                    {
+                                        recentPostOne(game.Review, game.Game, game["Date Reviewed"]);
+                                    }
+                                    if(rvcount === 1)
+                                    {
+                                        recentPostTwo(game.Review, game.Game, game["Date Reviewed"]);
+                                    }
+                                    if(rvcount === 2)
+                                    {
+                                        recentPostThree(game.Review, game.Game, game["Date Reviewed"]);
+                                    }
+                                    rvcount += 1;
+                                    // console.log(rvcount);
+                                }
+                            });
+                        },
+                        error: function(error) {
+                            console.error(error.message);
+                        }
+                    }
+                );
+            })
+
+            featuredPost(featuredLink, featuredTitle, featuredDesc, featuredImage);
+        }
+        
+        recentPosts();
     </script>
 
 </body>

@@ -139,7 +139,7 @@ function callFooter()
     `
 }
 
-function featuredPost(link, title, desc, image)
+async function featuredPost(link, title, desc, image)
 {
     document.getElementById("featuredLink").setAttribute("href", link);
     document.getElementById("featuredTitle").innerHTML = title;
@@ -147,21 +147,21 @@ function featuredPost(link, title, desc, image)
     document.getElementById("featuredImage").src = image;
 }
 
-function recentPostOne(link, title, date)
+async function recentPostOne(link, title, date)
 {
     document.getElementById("rp1link").setAttribute("href", link);
     document.getElementById("rp1title").innerHTML = title;
     document.getElementById("rp1date").innerHTML = date;
 }
 
-function recentPostTwo(link, title, date)
+async function recentPostTwo(link, title, date)
 {
     document.getElementById("rp2link").setAttribute("href", link);
     document.getElementById("rp2title").innerHTML = title;
     document.getElementById("rp2date").innerHTML = date;
 }
 
-function recentPostThree(link, title, date)
+async function recentPostThree(link, title, date)
 {
     document.getElementById("rp3link").setAttribute("href", link);
     document.getElementById("rp3title").innerHTML = title;
