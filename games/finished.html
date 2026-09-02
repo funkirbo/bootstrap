@@ -43,7 +43,7 @@
 <body id = "body" style = "min-height: 100vh;display: grid;grid-template-rows: auto auto auto 1fr;">
     <div class = "mb-1 p-3 text-start text-white">
         <h1 class = "p-1 m-1 pb-2 border-bottom border-2 border-dark-subtle">finished games</h1>
-        <p class = "p-1 m-1">any game whose date is a '-' was beaten before december 2023</p>
+        <p class = "p-1 m-1">any game whose date is blank was beaten before december 2023</p>
     </div>
     <div class = "mb-1 p-3 m-3 mt-0">
         <div class = "row">
@@ -133,7 +133,7 @@
             sortby = document.getElementById("finsortby").value;
 
             resetFinished();
-            await fetch("../data/funkirbo's Spreadsheet - Finished - Games.csv")
+            await fetch("https://docs.google.com/spreadsheets/d/1wghI3DxunnkLMZCxzpBWu02AC6G18SnVpQZ8Z8v5ilQ/gviz/tq?tqx=out:csv&sheet=Finished - Games")
             .then(res => res.blob())
             .then(blob => {
                 //console.log(blob);
@@ -158,7 +158,7 @@
                                 case "N-O":
                                     results.data.sort((a,b) => a.Game.localeCompare(b.Game));
                                     results.data.sort((a,b) => {
-                                        if (a["Date Finished"] !== "-")
+                                        if (a["Date Finished"] !== "")
                                         {
                                             dateA = new Date(a["Date Finished"]);
                                         }
@@ -166,7 +166,7 @@
                                             dateA = distantPast;
                                         }
 
-                                        if (b["Date Finished"] !== "-")
+                                        if (b["Date Finished"] !== "")
                                         {
                                             dateB = new Date(b["Date Finished"]);
                                         }
@@ -179,7 +179,7 @@
                                 case "O-N":
                                     results.data.sort((a,b) => a.Game.localeCompare(b.Game));
                                     results.data.sort((a,b) => {
-                                        if (a["Date Finished"] !== "-")
+                                        if (a["Date Finished"] !== "")
                                         {
                                             dateA = new Date(a["Date Finished"]);
                                         }
@@ -187,7 +187,7 @@
                                             dateA = distantPast;
                                         }
 
-                                        if (b["Date Finished"] !== "-")
+                                        if (b["Date Finished"] !== "")
                                         {
                                             dateB = new Date(b["Date Finished"]);
                                         }

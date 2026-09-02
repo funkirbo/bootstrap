@@ -154,7 +154,7 @@
             sortby = document.getElementById("colsortby").value;
 
             resetCollection();
-            await fetch("data/funkirbo's Spreadsheet - Collection - Games.csv")
+            await fetch("https://docs.google.com/spreadsheets/d/1wghI3DxunnkLMZCxzpBWu02AC6G18SnVpQZ8Z8v5ilQ/gviz/tq?tqx=out:csv&sheet=Collection - Games")
             .then(res => res.blob())
             .then(blob => {
                 //console.log(blob);

@@ -93,7 +93,7 @@
             searchkey = document.getElementById("rvsearch").value.toUpperCase();
             sortby = document.getElementById("rvsortby").value;
             resetReviews();
-            await fetch("data/funkirbo's Spreadsheet - Finished - Games.csv")
+            await fetch("https://docs.google.com/spreadsheets/d/1wghI3DxunnkLMZCxzpBWu02AC6G18SnVpQZ8Z8v5ilQ/gviz/tq?tqx=out:csv&sheet=Finished - Games")
             .then(res => res.blob())
             .then(blob => {
                 //console.log(blob);
